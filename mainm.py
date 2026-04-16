@@ -1,0 +1,2 @@
+sangeeta="deva"
+print(sangeeta)

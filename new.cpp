@@ -1,0 +1,1 @@
+#include <iostream>int main () {	std::string deepak = "Aditya" ;	std::cout<<deepak << std::endl;	return 0;}
