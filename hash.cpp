@@ -1,5 +1,8 @@
 #include <iostream>
 int main() {
-	
-	std::cout<<"himanshu"<<std::endl;
-	}
+    int deva = 22;
+    for (int i=0;i<1;i++) {
+		std::cout<<"Deva";
+		]
+    std::cout << deva; 
+}
