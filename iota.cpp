@@ -2,12 +2,13 @@
 #include <numeric>
 using namespace std;
 int main() {
-    int ids[5]; 
+    int ids[5];
     iota(ids,ids +5, 0);
     for (int i=0; i<5;i++) {
         std::cout<<ids[i]<<std::endl;
     }
 }
+
 // iota(begin, end, starting_value);
 //fills sequence automaticallyto
 /* It seems like there is a typo in your comment. The correct usage should be "for vector" instead of
