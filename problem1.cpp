@@ -14,3 +14,8 @@ int main() {
     }
     std::cout<< highest;
 }
+int main() {
+    int main () {
+        
+    }
+}
