@@ -10,4 +10,3 @@ int main() {
     std::cout<< deva; // you can't access a list at once
 
 }
-// 
