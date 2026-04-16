@@ -1,1 +1,10 @@
-you cannot create a list containing both int and string in cpp.
+1. you cannot create a list containing both int and string in cpp.
+2. WITHOUT using namespace std:
+std::cout << "hello";
+std::cin >> x;
+std::vector<int> v;
+
+// WITH using namespace std:
+cout << "hello";    // no std:: needed ✅
+cin >> x;           // no std:: needed ✅
+vector<int> v;      // no std:: needed ✅
