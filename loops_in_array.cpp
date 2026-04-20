@@ -1,0 +1,5 @@
+#include <iostream>
+int main() {
+    int array[]={1,2,3,8};
+    for 
+}

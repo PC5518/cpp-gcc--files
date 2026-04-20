@@ -6,3 +6,6 @@ int main() {
         std::cout<<i<<std::endl;
     }
 }
+int main() {
+    int 
+} 
