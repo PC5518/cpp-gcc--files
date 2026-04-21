@@ -5,4 +5,4 @@ int main() {
     for (int i=0; i < deva.size(); i++ ) {
         std::cout << deva[i] << " ";
     }
-}
+} 

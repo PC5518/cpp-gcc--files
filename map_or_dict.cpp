@@ -5,4 +5,4 @@ int main() {
     data["Aditya"]= 56;
     data["Sangeeta"]=892;
     std::cout<<  data["Aditya"] ;
-}
+} 
