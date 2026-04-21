@@ -1,0 +1,118 @@
+============================================
+   C++ ARRAYS & SIZEOF — QUICK NOTES
+============================================
+
+TOPIC: How to find number of elements in array
+
+
+--------------------------------------------
+1. THE CORE FORMULA
+--------------------------------------------
+
+    sizeof(array) / sizeof(array[0])
+
+    sizeof(array)      → total bytes used by whole array
+    sizeof(array[0])   → bytes used by ONE element
+    Division result    → number of elements
+
+
+--------------------------------------------
+2. EXAMPLE
+--------------------------------------------
+
+    int array[] = {1, 2, 58, 78};
+
+    sizeof(array)     = 16 bytes  (4 elements x 4 bytes each)
+    sizeof(array[0])  =  4 bytes  (one int = 4 bytes)
+    16 / 4            =  4        ← number of elements ✓
+
+
+--------------------------------------------
+3. MEMORY VISUALIZATION
+--------------------------------------------
+
+    ┌────────┬────────┬────────┬────────┐
+    │   1    │   2    │   58   │   78   │
+    └────────┴────────┴────────┴────────┘
+     4 bytes  4 bytes  4 bytes  4 bytes
+     = total 16 bytes
+
+
+--------------------------------------------
+4. REAL LIFE ANALOGY
+--------------------------------------------
+
+    Train length       = 40 meters  (total)
+    One compartment    = 10 meters  (one unit)
+    Number of compartments = 40/10 = 4
+
+    Same as:
+    Total array bytes / One element bytes = Count
+
+
+--------------------------------------------
+5. WHY NOT JUST COUNT MANUALLY?
+--------------------------------------------
+
+    - For small arrays you can count, no problem
+    - But when array is passed to a FUNCTION,
+      C++ forgets the size — only raw bytes remain
+    - sizeof formula works everywhere
+
+
+--------------------------------------------
+6. MEMORY SIZES OF COMMON TYPES
+--------------------------------------------
+
+    int     → 4 bytes
+    float   → 4 bytes
+    double  → 8 bytes
+    char    → 1 byte
+    bool    → 1 byte
+
+
+--------------------------------------------
+7. THREE WAYS TO LOOP AN ARRAY
+--------------------------------------------
+
+    // Way 1 — using sizeof formula
+    for (int i = 0; i < sizeof(arr)/sizeof(arr[0]); i++)
+
+    // Way 2 — store size in variable (cleaner)
+    int size = sizeof(arr) / sizeof(arr[0]);
+    for (int i = 0; i < size; i++)
+
+    // Way 3 — range based (cleanest)
+    for (int x : arr)
+        std::cout << x << " ";
+
+
+--------------------------------------------
+8. BETTER MODERN ALTERNATIVES
+--------------------------------------------
+
+    std::array<int, 4> arr = {1, 2, 58, 78};
+    arr.size();   ← directly gives count, no math needed
+
+    std::vector<int> arr = {1, 2, 58, 78};
+    arr.size();   ← same, plus size can grow dynamically
+
+    RULE OF THUMB:
+    - Learning basics?       → use int arr[]
+    - Fixed size, modern?    → use std::array
+    - Dynamic / flexible?    → use std::vector ✓ (preferred)
+
+
+--------------------------------------------
+9. KEY INSIGHT TO REMEMBER
+--------------------------------------------
+
+    C++ does NOT store element count internally.
+    It only knows raw memory bytes.
+    So we calculate count ourselves = sizeof trick.
+
+    Vectors solve this by tracking size automatically.
+
+============================================
+                END OF NOTES
+============================================
