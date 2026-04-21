@@ -67,6 +67,7 @@
     // WAY 1 — plain C-style array (old school)
     int deva[] = {1, 2, 58, 78};
     // use sizeof(deva)/sizeof(deva[0]) for size
+    // .size() does NOT work here ❌
 
     // WAY 2 — std::array (fixed size, modern)
     std::array<int, 4> deva = {1, 2, 58, 78};
@@ -80,7 +81,39 @@
 
 
 --------------------------------------------
-5. MEMORY CONCEPT
+5. sizeof() vs .size() — VERY IMP !!!
+--------------------------------------------
+
+    sizeof()  →  built into C++ language itself
+                 NO #include needed
+                 returns BYTES of memory
+                 works on ANY data type anywhere
+
+    .size()   →  comes from a library
+                 needs #include <array> or #include <vector>
+                 returns NUMBER OF ELEMENTS
+                 only works on library containers
+
+    // sizeof works on ANYTHING — no library needed
+    sizeof(int)          ✓
+    sizeof(float)        ✓
+    sizeof(deva)         ✓
+    sizeof(deva[0])      ✓
+
+    // .size() works on ANY type inside container
+    std::array<int, 4>    deva  →  deva.size() ✓
+    std::array<float, 3>  deva  →  deva.size() ✓
+    std::array<char, 5>   deva  →  deva.size() ✓
+    std::array<double, 2> deva  →  deva.size() ✓
+    std::vector<int>      deva  →  deva.size() ✓
+
+    ONE LINE RULE:
+    sizeof  =  C++ built-in  →  no library, works everywhere
+    .size() =  library gift  →  only array and vector
+
+
+--------------------------------------------
+6. MEMORY CONCEPT
 --------------------------------------------
 
     C++ does NOT track element count internally.
@@ -98,7 +131,7 @@
 
 
 --------------------------------------------
-6. MEMORY SIZE OF COMMON TYPES
+7. MEMORY SIZE OF COMMON TYPES
 --------------------------------------------
 
     int     → 4 bytes
@@ -109,34 +142,36 @@
 
 
 --------------------------------------------
-7. THREE WAYS TO LOOP
+8. THREE WAYS TO LOOP
 --------------------------------------------
 
-    // WAY 1 — sizeof formula (plain arrays)
+    // WAY 1 — sizeof formula (plain arrays only)
     for (int i = 0; i < sizeof(deva)/sizeof(deva[0]); i++)
         std::cout << deva[i] << " ";
 
-    // WAY 2 — .size() (std::array or vector)
+    // WAY 2 — .size() (std::array or vector only)
     for (int i = 0; i < deva.size(); i++)
         std::cout << deva[i] << " ";
 
-    // WAY 3 — range based (cleanest ✓)
+    // WAY 3 — range based (cleanest, works on all ✓)
     for (int x : deva)
         std::cout << x << " ";
 
 
 --------------------------------------------
-8. COMMON MISTAKES
+9. COMMON MISTAKES
 --------------------------------------------
 
-    ❌  deva.size()             on plain int arr[]
-    ❌  sizeof(deva)/deva[0]    missing sizeof on deva[0]
-    ❌  std::array<int,3>       when you have 4 elements
-    ❌  deva[4]                 out of bounds = garbage memory
+    ❌  deva.size()              on plain int arr[]
+    ❌  sizeof(deva)/deva[0]     missing sizeof on deva[0]
+    ❌  std::array<int,3>        when you have 4 elements
+    ❌  std::array<int,5>        reserving 5 slots for 4 elements
+                                 5th slot = garbage memory!
+    ❌  deva[4]                  out of bounds = garbage memory
 
 
 --------------------------------------------
-9. QUICK RULE — WHICH TO USE
+10. QUICK RULE — WHICH TO USE
 --------------------------------------------
 
     Just learning?          →  int arr[]
