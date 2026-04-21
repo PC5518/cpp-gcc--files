@@ -5,3 +5,6 @@ int main() {
     std::cout << input;
     return 0;
 }
+int main() {
+    
+}
