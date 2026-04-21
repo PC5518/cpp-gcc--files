@@ -8,3 +8,11 @@ std::vector<int> v;
 cout << "hello";    // no std:: needed ✅
 cin >> x;           // no std:: needed ✅
 vector<int> v;      // no std:: needed ✅
+
+################################
+Very Imp. !!!
+The Comparison
+Vector 
+ Python List: Both are dynamic. You can append() in Python and push_back() in C++. They grow as you add data.
+Array 
+ Python Tuple: Both have a fixed size that cannot change once created.

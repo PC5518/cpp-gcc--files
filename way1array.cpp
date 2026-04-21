@@ -8,4 +8,4 @@ int main() {
     }
     return 0; 
 }
-# to form an array
+//  to form an array
