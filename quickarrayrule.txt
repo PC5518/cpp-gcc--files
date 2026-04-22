@@ -1,2 +1,5 @@
 std::array<type, SIZE>   →  size REQUIRED
 std::vector<type>        →  size NOT needed ✅
+int main() {
+    std::cout >> int deva;
+} 
