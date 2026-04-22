@@ -8,5 +8,6 @@ int main() {
         std::cout<<x<< std::endl;
     }
 }
+// std::fill(start, end, value);
 // In C++, std::fill is a standard library function used to assign a specific value to all elements within a certain range
 //  we use algorithm
