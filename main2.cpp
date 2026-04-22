@@ -7,6 +7,5 @@ int main() {
     } else {
         std::cout<< "wrong tickert";
     }
-
 }
 // basics program

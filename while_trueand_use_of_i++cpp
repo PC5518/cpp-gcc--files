@@ -1,0 +1,9 @@
+#include <iostream>
+int main() {
+    int variable= 0;
+    while (variable <100 ) {
+        variable ++;
+        std::cout<< "AnsCom " << variable << std::endl;
+    }
+}
+// Shortcut for i=i+1 is i++
