@@ -7,3 +7,8 @@ int main() {
     }
 }
 // Shortcut for i=i+1 is i++
+int deva() {
+    int deva;
+    std::cin>> deva ;
+    std::cout<< deva <<std::endl; 
+}
