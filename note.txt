@@ -1,56 +1,40 @@
 ============================================
         C++ IMPORTANT NOTES
 ============================================
-
-
 --------------------------------------------
 1. TYPE SAFETY — VERY IMPORTANT
 --------------------------------------------
-
     C++ arrays/vectors must contain ONE type only.
-
     // Python — mixed types allowed
     arr = [1, "hello", 3.14]   ✓
-
     // C++ — NOT allowed
     vector<int> v = {1, "hello"};   ❌ ERROR!
-
     All elements must be same type: all int, 
     all string, all float, etc.
-
-
 --------------------------------------------
 2. std:: PREFIX — WITH AND WITHOUT
 --------------------------------------------
-
     WITHOUT using namespace std:
         std::cout << "hello";
         std::cin >> x;
         std::vector<int> v;
-
     WITH using namespace std:
         cout << "hello";     // no std:: needed ✓
         cin >> x;            // no std:: needed ✓
         vector<int> v;       // no std:: needed ✓
-
     NOTE: Most beginners use "using namespace std;"
     at the top to keep code clean and short.
-
-
 --------------------------------------------
 3. PYTHON vs C++ COMPARISON — VERY IMP !!!
 --------------------------------------------
-
     Vector  =  Python List
         - Both are DYNAMIC
         - Python  → append()
         - C++     → push_back()
         - Both grow as you add data
-
     Array   =  Python Tuple
         - Both have FIXED size
         - Size cannot change once created
-
     Summary:
     ┌──────────────┬────────────┬─────────────┐
     │  C++         │  Python    │  Size       │
@@ -58,125 +42,133 @@
     │  vector      │  list      │  dynamic    │
     │  array       │  tuple     │  fixed      │
     └──────────────┴────────────┴─────────────┘
-
-
 --------------------------------------------
 4. THREE WAYS TO MAKE AN ARRAY/LIST IN C++
 --------------------------------------------
-
     // WAY 1 — plain C-style array (old school)
     int deva[] = {1, 2, 58, 78};
     // use sizeof(deva)/sizeof(deva[0]) for size
     // .size() does NOT work here ❌
-
     // WAY 2 — std::array (fixed size, modern)
     std::array<int, 4> deva = {1, 2, 58, 78};
     // size in <> must match element count exactly!
     // deva.size() works ✓
-
     // WAY 3 — std::vector (dynamic, preferred ✓)
     std::vector<int> deva = {1, 2, 58, 78};
     // deva.push_back(99) adds element ✓
     // deva.size() works ✓
-
-
 --------------------------------------------
 5. sizeof() vs .size() — VERY IMP !!!
 --------------------------------------------
-
     sizeof()  →  built into C++ language itself
                  NO #include needed
                  returns BYTES of memory
                  works on ANY data type anywhere
-
     .size()   →  comes from a library
                  needs #include <array> or #include <vector>
                  returns NUMBER OF ELEMENTS
                  only works on library containers
-
     // sizeof works on ANYTHING — no library needed
     sizeof(int)          ✓
     sizeof(float)        ✓
     sizeof(deva)         ✓
     sizeof(deva[0])      ✓
-
     // .size() works on ANY type inside container
     std::array<int, 4>    deva  →  deva.size() ✓
     std::array<float, 3>  deva  →  deva.size() ✓
     std::array<char, 5>   deva  →  deva.size() ✓
     std::array<double, 2> deva  →  deva.size() ✓
     std::vector<int>      deva  →  deva.size() ✓
-
     ONE LINE RULE:
     sizeof  =  C++ built-in  →  no library, works everywhere
     .size() =  library gift  →  only array and vector
-
-
 --------------------------------------------
 6. MEMORY CONCEPT
 --------------------------------------------
-
     C++ does NOT track element count internally.
     It only stores raw bytes in memory.
-
     int deva[] = {1, 2, 58, 78};
-
     ┌────────┬────────┬────────┬────────┐
     │   1    │   2    │   58   │   78   │
     └────────┴────────┴────────┴────────┘
      4 bytes  4 bytes  4 bytes  4 bytes = 16 bytes total
-
     Formula to get element count:
     sizeof(deva) / sizeof(deva[0]) = 16/4 = 4
-
-
 --------------------------------------------
 7. MEMORY SIZE OF COMMON TYPES
 --------------------------------------------
-
     int     → 4 bytes
     float   → 4 bytes
     double  → 8 bytes
     char    → 1 byte
     bool    → 1 byte
-
-
 --------------------------------------------
 8. THREE WAYS TO LOOP
 --------------------------------------------
-
     // WAY 1 — sizeof formula (plain arrays only)
     for (int i = 0; i < sizeof(deva)/sizeof(deva[0]); i++)
         std::cout << deva[i] << " ";
-
     // WAY 2 — .size() (std::array or vector only)
     for (int i = 0; i < deva.size(); i++)
         std::cout << deva[i] << " ";
-
     // WAY 3 — range based (cleanest, works on all ✓)
     for (int x : deva)
         std::cout << x << " ";
-
-
 --------------------------------------------
 9. COMMON MISTAKES
 --------------------------------------------
-
     ❌  deva.size()              on plain int arr[]
     ❌  sizeof(deva)/deva[0]     missing sizeof on deva[0]
     ❌  std::array<int,3>        when you have 4 elements
     ❌  std::array<int,5>        reserving 5 slots for 4 elements
                                  5th slot = garbage memory!
     ❌  deva[4]                  out of bounds = garbage memory
-
-
 --------------------------------------------
 10. QUICK RULE — WHICH TO USE
 --------------------------------------------
-
     Just learning?          →  int arr[]
     Fixed size, modern?     →  std::array
     Flexible / dynamic?     →  std::vector  ✓ (preferred)
+--------------------------------------------
+11. int vs void — RETURN TYPES IN FUNCTIONS
+--------------------------------------------
+    Every function in C++ must declare what it RETURNS.
+
+    int main()
+        → returns an INTEGER to the OS
+        → return 0 means "program ran successfully"
+        → return 1 means "something went wrong"
+        → ALWAYS use int main() — it is the standard ✓
+
+    void myFunction()
+        → returns NOTHING
+        → used when function just DOES something
+        → no return statement needed (or just "return;")
+
+    EXAMPLES:
+    // int function — must return a number
+    int add(int a, int b) {
+        return a + b;   // ✓ returns int
+    }
+
+    // void function — returns nothing
+    void greet() {
+        std::cout << "Hello!";  // just does something
+        // no return needed ✓
+    }
+
+    QUICK RULE:
+    ┌─────────┬──────────────────────────────────────┐
+    │  int    │  function gives back a value         │
+    │  void   │  function just does a task, no value │
+    └─────────┴──────────────────────────────────────┘
+
+    WHY int main() and not void main()?
+        → The OS needs to know if your program
+          succeeded or failed.
+        → return 0  =  success ✓
+        → return 1  =  failure ❌
+        → void main() is technically wrong in C++ standard!
 
 ============================================
               END OF NOTES
