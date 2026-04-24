@@ -7,7 +7,7 @@ int main() {
     std::string deva ="aditya";
     std::cout<< deva<<std::endl;
     std::cout<< &deva<< std::endl;
-    std::cout<< (void*)fxn << std::endl; // heey compiler stop trying to be smart and tell me the memory location
+    std::cout<< (void*)&fxn << std::endl; // heey compiler stop trying to be smart and tell me the memory location
 }
 //  & ->  act of looking at the shipping label on the box to see where it’s going
 // (void*) -> it's the way of finding the value
