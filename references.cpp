@@ -7,5 +7,6 @@ int main() {
 
 
     std::cout<<"X's adress is " << ref<<std::endl;
-    std::cout<<"x's adress is " << &ref<<std::endl;
+    std::cout<<"x's adress is " << &ref
+    <<std::endl;
 }
