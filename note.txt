@@ -170,6 +170,41 @@
         → return 1  =  failure ❌
         → void main() is technically wrong in C++ standard!
 
+--------------------------------------------
+12. ADDRESSES & POINTERS (& vs void*)
+--------------------------------------------
+    & (Address-of Operator)  →  The "Getter"
+    (void*) (Type Cast)      →  The "Disguise"
+
+    1. To get a memory address, use &
+       &variable_name
+
+    2. Why use (void*) cast?
+       C++ is "too smart" sometimes. If you try to print 
+       the address of a function or a char, cout might 
+       print '1' (true) or the actual text instead.
+
+       (void*) forces cout to show the RAW HEXADECIMAL 
+       memory address (e.g., 0x7ffee4...).
+
+    EXAMPLES:
+    int x = 10;
+    cout << &x;          // Shows hex address ✓
+    
+    void fxn() {}
+    cout << fxn;         // Prints 1 (WRONG! ❌)
+    cout << (void*)fxn;  // Shows hex address ✓ (CORRECT)
+
+    char c = 'A';
+    cout << &c;          // Prints "A" then garbage ❌
+    cout << (void*)&c;   // Shows hex address ✓ (CORRECT)
+
+    QUICK RULE:
+    ┌──────────┬─────────────────────────────────────────┐
+    │  &       │  Go find WHERE the data lives in RAM    │
+    │  (void*) │  Force cout to print it in HEXADECIMAL  │
+    └──────────┴─────────────────────────────────────────┘
+
 ============================================
               END OF NOTES
-============================================
+============================== deva==============
