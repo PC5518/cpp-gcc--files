@@ -3,9 +3,9 @@ int main() {
     std::string x="deva";
     std::string y="aditya";
     std::string temp=x;
-    std::string temp2=y;
-    x=temp2;
+    x=y;
     y=temp;
-    std::cout<<"x: " <<temp2 <<std::endl;
-    std::cout<<"y: "<<temp << std::endl;
+    std::cout<<"x is "<<x << std::endl;
+    std::cout<<"y is "<<y << std::endl;
 }
+// this was manually through storing a data in another variable for temporary purpose
