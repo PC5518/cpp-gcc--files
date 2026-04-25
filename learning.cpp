@@ -6,6 +6,6 @@ int main() {
     std::string temp2=y;
     x=temp2;
     y=temp;
-    std::cout<<"x" <<temp2 <<std::endl;
-    std::cout<<"y"<<temp << std::endl;
+    std::cout<<"x: " <<temp2 <<std::endl;
+    std::cout<<"y: "<<temp << std::endl;
 }
