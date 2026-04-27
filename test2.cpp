@@ -1,5 +1,5 @@
 #include <iostream>
-int main() 
-{
-    std::cout<< "hello world";
+int  main() {
+    int deva= 3;
+    std::cout<<deva << std::endl;
 }
