@@ -15,3 +15,4 @@ int main() {
 // (void*)&deva
 // //  ↑     ↑
 // // type  address
+// * = "STAR = Seedha Tak Address se Result lao!"
