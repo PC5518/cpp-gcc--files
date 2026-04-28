@@ -7,5 +7,5 @@ int main() {
     std::cout<< deva<< std::endl;
     std::cin>>  deva;
     std::cout<< deva<< std::endl;
-    deva();
+
 }
