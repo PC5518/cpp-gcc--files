@@ -24,6 +24,8 @@
         vector<int> v;       // no std:: needed ✓
     NOTE: Most beginners use "using namespace std;"
     at the top to keep code clean and short.
+    NOTE 2: Professionals prefer std:: explicitly.
+    Both are valid — you decide!
 --------------------------------------------
 3. PYTHON vs C++ COMPARISON — VERY IMP !!!
 --------------------------------------------
@@ -205,6 +207,72 @@
     │  (void*) │  Force cout to print it in HEXADECIMAL  │
     └──────────┴─────────────────────────────────────────┘
 
+--------------------------------------------
+13. REFERENCES — & AS A WRAPPER (L1-11)
+--------------------------------------------
+    Reference = DHL label on the SAME box
+    Ek teer do nishane 🎯
+
+    int x = 4;
+    int& a = x;   // a is just another label on x's box
+                  // naya var mat banana, sirf wrap karo
+
+    a = 99;       // x also becomes 99 — same box!
+
+    RULES:
+    ❌  int& a;         must initialize immediately
+    ❌  int& a = 5;     cannot reference a literal
+    ✓   int& a = x;     must reference an existing variable
+
+    TWO JOBS OF SYMBOLS:
+    ┌──────────┬──────────────────────────────────────┐
+    │  &       │  decides WHICH box (wraps the label) │
+    │  =       │  changes what's INSIDE the box       │
+    └──────────┴──────────────────────────────────────┘
+
+    GOLDEN RULE:
+    Whatever you do to the reference →
+    you are doing to the original. Always. No exceptions.
+
+--------------------------------------------
+14. C++ vs PYTHON — FUNCTION PARAMETERS
+    (BIGGEST DIFFERENCE — VERY IMP!!!)
+--------------------------------------------
+    PYTHON → parameters reflect changes (return karke)
+    C++    → by default parameters are COPIES only
+
+    // Python — changes reflect
+    def swap(a, b):
+        a, b = b, a
+        return a, b        ✓ works
+
+    // C++ WITHOUT & — original untouched ❌
+    void swap(int a, int b) {
+        // a and b are NEW boxes — copies of x and y
+        // swap happens inside only
+        // x and y outside? untouched 😐
+    }
+
+    // C++ WITH & — original gets edited ✓
+    void swap(int& a, int& b) {
+        // a IS x, b IS y — DHL labels
+        // swap hits originals directly ✓
+    }
+
+    QUICK RULE:
+    ┌─────────────────┬──────────────────────────────┐
+    │  No &           │  READ only — copy mili hai   │
+    │  With &         │  EDIT — original pe label    │
+    └─────────────────┴──────────────────────────────┘
+
+    WHY C++ does this?
+    → C++ is a SYSTEMS language — built for speed & safety
+    → Copy = safe. Function apni duniya mein kaam kare.
+    → & = aap explicitly bol rahe ho "mujhe original chahiye"
+    → Aap decide karte ho — copy chahiye ya original
+    → Python yeh automatically handle karta hai
+    → C++ mein AAPKO bolna padta hai — more control ✓
+
 ============================================
               END OF NOTES
-============================== deva==============
+============================================
