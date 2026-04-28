@@ -13,6 +13,10 @@ int main() {
 
     int& b= y;
     // what's the advantage??? 
-    
+    int temp =  a;
+    x=y;
+    y=temp ;
+    std::cout<<x << " "<<y <<std::endl;
+
 
 }
