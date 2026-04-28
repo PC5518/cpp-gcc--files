@@ -10,3 +10,8 @@ int main() {
     swap(x,y);
     std::cout<<x<<" " <<y  <<std::endl; 
 }
+// C++ ka default rule:
+
+// Function arguments are NOT editable — they are read-only copies.
+
+// Agar edit karna hai original ko → force karo & se.
