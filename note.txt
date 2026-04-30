@@ -273,6 +273,66 @@
     → Python yeh automatically handle karta hai
     → C++ mein AAPKO bolna padta hai — more control ✓
 
+--------------------------------------------
+15. sizeof MISUNDERSTANDING — VERY IMP!!!
+--------------------------------------------
+    sizeof = bytes in RAM. Elements nahi, BYTES!
+
+    int arr[] = {1, 2, 3, 4};
+    sizeof(arr)        → 16  (4 elements × 4 bytes)
+    sizeof(arr[0])     → 4   (ek int = 4 bytes)
+    sizeof(arr)/sizeof(arr[0]) → 4  (elements count) ✅
+
+    COMMON MISTAKE:
+    ❌ log sochte hain sizeof(arr) = 4 (elements)
+    ✅ actually sizeof(arr) = 16 (bytes!)
+
+--------------------------------------------
+16. ARRAY DECAY — FUNCTION ME sizeof KAAM NAHI KARTA
+--------------------------------------------
+    Yeh bahut important working rule hai arrays ka!
+
+    Jab array directly defined ho:
+    int arr[] = {1, 2, 3, 4};
+    sizeof(arr) = 16  ✅ sahi kaam karta hai
+
+    Jab array function mein jaata hai:
+    void printArray(int arr[]) {
+        sizeof(arr);  // ❌ WRONG! 8 aayega — 4 nahi!
+    }
+
+    KYUN?
+    → Function mein array "decay" ho jaata hai
+    → Poori array nahi jaati — sirf PEHLE ELEMENT KA ADDRESS jaata hai
+    → Function ko pata hi nahi kitne elements hain
+    → sizeof ab address ka size batata hai — array ka nahi!
+
+    Memory mein:
+    Original: arr → [1][2][3][4]
+                     ↑
+    Function ko sirf yeh address milta hai — baaki sab kho jaata hai!
+
+    SOLUTION — size alag se pass karo:
+    void printArray(int arr[], int size) {
+        for(int i = 0; i < size; i++)
+            cout << arr[i];
+    }
+
+    int main() {
+        int arr[] = {1, 2, 3, 4};
+        int size = sizeof(arr)/sizeof(arr[0]);  // bahar calculate karo
+        printArray(arr, size);  // alag se bhejo ✅
+    }
+
+    GOLDEN RULE:
+    ┌─────────────────────────────────────────────────────┐
+    │  sizeof sirf wahan use karo jahan array DIRECTLY   │
+    │  defined ho — function ke andar KABHI NAHI! ❌      │
+    └─────────────────────────────────────────────────────┘
+
+    NOTE: Yeh "Array Decay" concept hai — L1-19 mein
+    aur deep samjhenge pointers ke saath!
+
 ============================================
               END OF NOTES
 ============================================
