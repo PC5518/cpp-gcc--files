@@ -1,5 +1,5 @@
 #include <iostream> 
 int main() {
-    int array[]={1,2,233,4,5,5};
-    
+    int deva=23;
+    std::cout<< deva<< std::endl;
 }
