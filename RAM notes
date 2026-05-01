@@ -9,3 +9,4 @@ HEAP — Upar ka floor
 slow, manual, bohot bada
 new int(10);     ← yahan jaata hai
 delete na karo   ← hamesha pada rahega! (memory leak)
+
