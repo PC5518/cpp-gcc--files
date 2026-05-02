@@ -6,5 +6,6 @@ int main() {
 	std::cout<< pyari<<std::endl; //  we make a memory access in heap ratehr than stack
 	// thing i.e to be observed is that memory adress is still the same but the
 	// data inside it is
-	std::cout<< *pyari<<std::endl;
+	std::cout<< *pyari<<std::endl; // vePYARI IS NOW A DANGLING PPOINTER
+	// pyari is now a dangling pointer 
 }
