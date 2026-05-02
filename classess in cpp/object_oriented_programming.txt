@@ -2,7 +2,7 @@
         OOP — OBJECT ORIENTED PROGRAMMING
         L3-01 Classes Introduction
 ============================================
-
+Class = Data + Functions — ek saath ek jagah!
 --------------------------------------------
 PEHLE KA CODE — MESSY:
 --------------------------------------------
