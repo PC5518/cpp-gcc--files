@@ -1,0 +1,118 @@
+============================================
+        OOP — OBJECT ORIENTED PROGRAMMING
+        L3-01 Classes Introduction
+============================================
+
+--------------------------------------------
+PEHLE KA CODE — MESSY:
+--------------------------------------------
+    int speed = 100;
+    string color = "red";
+    void accelerate() { speed += 10; }
+    void brake()      { speed -= 10; }
+
+    // sab alag alag — koi connection nahi! 😩
+
+--------------------------------------------
+OOP KYA HAI:
+--------------------------------------------
+    Properties + Functions = EK JAGAH!
+
+    Real world mein sochte hain:
+    Har cheez ke paas:
+    → Kuch properties hoti hain (data)
+    → Kuch kaam hote hain (functions)
+
+    OOP = dono ko ek saath rakhna! ✅
+
+--------------------------------------------
+CLASS = BLUEPRINT:
+--------------------------------------------
+    Class  = Ghar ka naksha 📋
+    Object = Actual ghar 🏠
+
+    Ek naksha  → hazaron ghar ban sakte hain!
+    Ek class   → hazaron objects ban sakte hain!
+
+--------------------------------------------
+REAL WORLD EXAMPLE — CAR:
+--------------------------------------------
+    Car ki properties:      Car ke kaam:
+    → color = "red"         → accelerate()
+    → speed = 100           → brake()
+    → brand = "Toyota"      → honk()
+
+    C++ mein:
+    class Car {
+        string color;           // property
+        int speed;              // property
+        string brand;           // property
+
+        void accelerate() { speed += 10; }  // kaam
+        void brake()      { speed -= 10; }  // kaam
+        void honk() { cout << "Beep!"; }    // kaam
+    };
+
+--------------------------------------------
+CLASS BANAO — OBJECT BANAO:
+--------------------------------------------
+    // class = sirf blueprint — koi memory nahi
+    class Car {
+        int speed;
+        string color;
+    };
+
+    // object = actual cheez — memory milti hai!
+    Car myCar;          // pehli car
+    Car deva_car;       // doosri car
+    Car aditya_car;     // teesri car
+
+    // teeno alag objects — but same blueprint se! ✅
+
+--------------------------------------------
+CLASS vs OBJECT — QUICK TABLE:
+--------------------------------------------
+    ┌──────────┬────────────────────────────┐
+    │  Class   │  Blueprint — sirf design   │
+    │  Object  │  Actual cheez — real memory│
+    └──────────┴────────────────────────────┘
+
+--------------------------------------------
+SYNTAX — CLASS BANANA:
+--------------------------------------------
+    class ClassName {
+    public:             // bahar se access karo
+        int property;
+        void function() {
+            // kaam karo
+        }
+    };                  // ← semicolon zaruri! ✅
+
+--------------------------------------------
+PYTHON vs C++ — OOP:
+--------------------------------------------
+    // Python
+    class Car:
+        def __init__(self):
+            self.speed = 0
+        def accelerate(self):
+            self.speed += 10
+
+    // C++
+    class Car {
+    public:
+        int speed = 0;
+        void accelerate() { speed += 10; }
+    };
+
+--------------------------------------------
+GOLDEN RULES:
+--------------------------------------------
+    1. Class ke baad ; lagao — HAMESHA! ✅
+    2. Class = blueprint — object = actual cheez
+    3. Ek class se hazaron objects ban sakte hain
+    4. Properties = data, Functions = kaam
+
+============================================
+              END — OOP NOTES
+============================================
