@@ -1,0 +1,77 @@
+============================================
+     DANGLING POINTER — KHUD DISCOVER KIYA!
+     Date: 5/2/2026 🏆
+============================================
+
+--------------------------------------------
+MERA ACTUAL CODE:
+--------------------------------------------
+    int deva = 72;
+    int* pyari = new int(1);
+    delete pyari;
+    cout << pyari;    // OUTPUT: 0x1091a60
+    cout << *pyari;   // OUTPUT: 17373592
+
+--------------------------------------------
+MERI DISCOVERY (mere apne words mein):
+--------------------------------------------
+    "delete kar dene se variable delete nahi hota —
+     value delete hoti hai — address wahi rehta hai
+     heap ka purana wala!"
+
+--------------------------------------------
+MATLAB KYA HUA:
+--------------------------------------------
+
+    BEFORE delete:
+    pyari → 0x1091a60 → [1]
+               ↑           ↑
+            address      value (valid)
+
+    AFTER delete:
+    pyari → 0x1091a60 → [17373592]
+               ↑              ↑
+        address abhi       GARBAGE!
+        bhi wahi hai!      value free ho gayi
+
+    → delete ne sirf HEAP KI VALUE free ki
+    → pointer ka address nahi badla
+    → ab us address pe koi valid data nahi
+    → jo bhi hai — GARBAGE hai!
+
+--------------------------------------------
+DANGLING POINTER KYA HOTA HAI:
+--------------------------------------------
+    Pointer jo ek aisi memory pe point kar raha ho
+    jo already DELETE ho chuki hai!
+
+    pyari = DANGLING POINTER tha kyunki:
+    → delete ke baad bhi 0x1091a60 pe point kar raha tha
+    → wahan ab valid data nahi tha
+    → GARBAGE aa raha tha — 17373592
+
+--------------------------------------------
+FIX:
+--------------------------------------------
+    delete pyari;
+    pyari = nullptr;   // ✅ address bhi saaf!
+
+    Ab agar galti se use kiya:
+    cout << *pyari;    // CRASH — but safe crash!
+                       // garbage se better!
+
+--------------------------------------------
+GOLDEN RULE:
+--------------------------------------------
+
+    ┌─────────────────────────────────────┐
+    │  new   → heap pe banao             │
+    │  delete → value free karo          │
+    │  nullptr → address bhi saaf karo   │
+    │                                     │
+    │  IN ORDER — HAMESHA TEENO! ✅       │
+    └─────────────────────────────────────┘
+
+============================================
+         END — DANGLING POINTER
+============================================
