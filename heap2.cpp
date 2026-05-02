@@ -8,4 +8,4 @@ int main() {
 	// data inside it is
 	std::cout<< *pyari<<std::endl; // vePYARI IS NOW A DANGLING PPOINTER
 	// pyari is now a dangling pointer 
-}
+}  
