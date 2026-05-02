@@ -28,9 +28,15 @@ public: // public jaha pe mai pure data ka access pure code bhar chahiye
 };
 int main() {
     student aditya;
-    aditya.name= "Aditya" ;
+    aditya.name= "Aditya Narayan Singh" ;
     aditya.marks= 99;
     aditya.age=17;
     std::cout<< aditya.age<< std::endl;
     aditya.showInfo(); // this only shows variable
+    std::cout<< "=================="<<std::endl;
+    student Deepak;
+    Deepak.age=48;
+    Deepak.name="Deepak Singh";
+    Deepak.marks=36;
+    std::cout<< Deepak.name<<std::endl;
 }
