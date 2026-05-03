@@ -4,4 +4,4 @@ int main() {
     int& aditya =deva;
     std::cout<< (void*)&aditya<<std::endl;
     std::cout<< (void*)&deva<<std::endl;
-}// full access over 
+}// full access over adress and data
