@@ -25,3 +25,6 @@ int main() {
 // rvalue  = temporary — sirf data ✅
 // &       = lvalue pakdo
 // &&      = rvalue pakdo — std::move mein kaam aayega!
+// // =================================
+// &  = left value leta hai  = cover = permanent
+// && = right value leta hai = data  = temporary
