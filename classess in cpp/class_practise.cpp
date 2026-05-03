@@ -12,4 +12,4 @@ int main() {
     ferrari.version='a';
     std::cout<<ferrari.speed <<std::endl;
 }
-// simple way to use class .
+// simple way to use class.
