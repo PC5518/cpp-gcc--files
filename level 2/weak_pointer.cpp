@@ -4,10 +4,9 @@
 int main() {
     auto a = std::make_shared<int>(10);
     auto b =  std::make_shared<int>(223);
+// weak_ptr ka ek hi kaam:
 
-    std::cout<< *a <<std::endl;
-    std::cout<< *b <<std::endl;
-
-    int deva =783;
-    std::cout<<deva <<std::endl;
+// "Woh data abhi bhi hai ya shred ho gaya?" — check karna!
+    std::weak_ptr<int> w=b;
+    std::cout<< w.lock()<<std::endl;
 }
