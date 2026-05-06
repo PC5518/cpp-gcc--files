@@ -24,3 +24,9 @@ int main() {
 // -> ye khali ford ka cleanup karega
 // baki ke code par koi asar nahi hoga
 // Constructor = Factory default settings 🏭
+// =========================================================
+// Destructor = RAM khali karna!
+// Object bana    → RAM li ✅
+// Object khatam  → RAM wapas karo ✅
+//                → Destructor karta hai yeh kaam!
+// =========================================================
