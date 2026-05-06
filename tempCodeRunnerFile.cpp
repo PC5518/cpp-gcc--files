@@ -1,1 +1,1 @@
-o
+f (input ==passwor
