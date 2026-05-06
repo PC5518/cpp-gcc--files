@@ -1,7 +1,7 @@
 #include <iostream>
 int fxn() {
     int deva =55;
-    std::cout<<deva <<std::endl;
+    std ::cout<<deva <<std::endl;
 }
 int main() {
     std::string deva ="aditya";
