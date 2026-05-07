@@ -3,9 +3,6 @@ Abhi ke liye bas yaad rakho:
 Class mein pointer hai → Rule of 3 likhna chahiye!
 Details baad mein aayengi! ✅
 
-
-
-
 Rule of 3 kya hai?
 Simple rule: onyl valid when pointers are involved.
 
