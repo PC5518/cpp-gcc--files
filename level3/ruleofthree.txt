@@ -1,0 +1,44 @@
+Rule of 3 kya hai?
+Simple rule:
+
+Agar class mein yeh teen mein se ek likha hai — toh teeno likhne chahiye!
+
+1. Destructor
+2. Copy Constructor
+3. Copy Assignment Operator
+
+Kyun?
+Agar class mein pointer hai:
+cppclass car {
+    int* engine;  // pointer hai!
+};
+Toh teeno zaruri hain:
+cpp// 1. Destructor — memory free karo
+~car() {
+    delete engine;
+}
+
+// 2. Copy Constructor — deep copy
+car(const car& other) {
+    engine = new int(*other.engine);
+}
+
+// 3. Copy Assignment — deep copy baad mein
+car& operator=(const car& other) {
+    if (this != &other) {
+        delete engine;
+        engine = new int(*other.engine);
+    }
+    return *this;
+}
+
+Kyun teeno saath:
+Destructor likha   → memory delete hogi
+Copy Constructor   → nahi likha → shallow copy → CRASH! 😱
+Copy Assignment    → nahi likha → shallow copy → CRASH! 😱
+Teeno saath → safe! ✅
+
+Simple rule yaad rakhne ka:
+
+"Ek likha toh teen likho!" 🎯
+
