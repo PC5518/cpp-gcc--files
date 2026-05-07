@@ -10,7 +10,7 @@ public:
         code =0;// yaha code ya ford kisi bhi car ko default value milli 
         dob= 0;
         std::cout<<"Car ban gya" <<std::endl;
-    
+     
 
     }
     ~car() {
