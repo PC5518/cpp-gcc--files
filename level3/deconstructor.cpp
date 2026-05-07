@@ -30,4 +30,4 @@ int main() {
 // Object khatam  → RAM wapas karo ✅
 //                → Destructor karta hai yeh kaam!
 // =========================================================
-jaise hi scope {} khatam pura class ke objects delete ho jate hai due to deconstrictor. liek ford bmw hyundai kia tata
+// jaise hi scope {} khatam pura class ke objects delete ho jate hai due to deconstrictor. liek ford bmw hyundai kia tata
