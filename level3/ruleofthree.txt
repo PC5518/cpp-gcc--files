@@ -13,7 +13,7 @@ Agar class mein yeh teen mein se ek likha hai — toh teeno likhne chahiye!
 3. Copy Assignment Operator
 
 Kyun?
-Agar class mein pointer hai:
+Agar class mein pointer hai:e
 cpp
 class car {
     int* engine;  // pointer hai!
