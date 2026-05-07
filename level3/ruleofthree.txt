@@ -1,5 +1,13 @@
+Abhi ke liye bas yaad rakho:
+
+Class mein pointer hai → Rule of 3 likhna chahiye!
+Details baad mein aayengi! ✅
+
+
+
+
 Rule of 3 kya hai?
-Simple rule:
+Simple rule: onyl valid when pointers are involved.
 
 Agar class mein yeh teen mein se ek likha hai — toh teeno likhne chahiye!
 
@@ -9,7 +17,8 @@ Agar class mein yeh teen mein se ek likha hai — toh teeno likhne chahiye!
 
 Kyun?
 Agar class mein pointer hai:
-cppclass car {
+cpp
+class car {
     int* engine;  // pointer hai!
 };
 Toh teeno zaruri hain:
