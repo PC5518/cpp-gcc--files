@@ -18,5 +18,6 @@ int main() {
     // std::cout<< tata.color<<std::endl;
     car tata;
     tata =ford; // alag tarike se.
+    std::cout <<tata.color <<std::endl;
 }//  NOW IF I WANNA COPY THE HYUNDAI AS BMW
 // now it's like kaam wahi lekin timing ya tarika alag alag 
