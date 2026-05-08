@@ -1,9 +1,9 @@
 #include <iostream>
 void interchange(int& a, int& b) {
-    int temp=b;
+    int temp=a;
     a=b;
     b=temp;
-    std::cout<<(a,b) <<std::endl;
+    std::cout<< "x: "<< a <<" y: " <<b <<std::endl;
 
 } 
 int main( ) {
