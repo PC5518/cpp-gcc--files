@@ -12,8 +12,10 @@ public:
     car operator+(const car& other) {
         return  car(speed +  other.speed);
     }
-    
+
 };
 int main( ) {
-    
+    car ford(100);
+    car tata(200);
+    std::cout <<(ford+ tata).speed <<std::endl;
 }
