@@ -1,1 +1,12 @@
 defining  a class means we are defining a new type and creating a new type
+// C++ ke built-in types:
+int
+float
+double
+char
+bool
+
+// Tera apna type:
+class car { };   // ← naya type! 😎
+class Student { } // ← naya type!
+class Ferrari { } // ← naya type!
