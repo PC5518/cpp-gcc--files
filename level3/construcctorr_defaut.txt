@@ -1,0 +1,23 @@
+Har ek ka apna value — tu decide karta hai! ✅
+
+car() — sab ke liye same default:
+cppcar() {
+    speed = 0;  // har koi banaye → speed = 0
+}
+
+car ford;   // speed = 0 ✅
+car bmw;    // speed = 0 ✅
+car tata;   // speed = 0 ✅
+Sab ka same — constructor decide karta hai! ✅
+
+Dono saath bhi ho sakte hain:
+cppclass car {
+public:
+    int speed;
+
+    car() { speed = 0; }        // default — sab ke liye
+    car(int s) { speed = s; }   // specific — tu bataye
+};
+
+car ford;       // speed = 0   ← default ✅
+car bmw(200);   // speed = 200 ← specific ✅

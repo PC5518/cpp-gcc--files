@@ -6,6 +6,7 @@ public:
     car(int s) { // constructor hai, parameterized constructor hai
         speed =s;
     }
+    
 
 };
 int main( ) {
