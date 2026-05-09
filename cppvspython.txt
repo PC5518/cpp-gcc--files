@@ -1,0 +1,3 @@
+&&   →   Python ka `and`
+||   →   Python ka `or`
+!    →   Python ka `not`
