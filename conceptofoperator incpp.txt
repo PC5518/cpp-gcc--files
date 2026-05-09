@@ -1,0 +1,4 @@
+in cpp, + is actually a predfined fxn; 
+when we do 100+200;
+it's actually 100.opeartor+ 200;
+
