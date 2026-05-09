@@ -1,0 +1,40 @@
+Stack vs Heap — Do Duniyaan
+
+RAM ek building hai — do floors hain:
+
+STACK — Ground Floor
+————————————————————
+fast, automatic, limited space
+int x = 10;          ← yahan jaata hai
+float f = 3.14;      ← yahan jaata hai
+bool b = true;       ← yahan jaata hai
+char c = 'a';        ← yahan jaata hai
+function khatam      ← automatically saaf ho jaata hai
+
+HEAP — Upar ka Floor
+————————————————————
+slow, manual, bohot bada
+new int(10);         ← yahan jaata hai — TU delete karega
+make_unique<int>(10) ← yahan jaata hai — automatic saaf ✅
+delete na karo       ← hamesha pada rahega! (memory leak)
+
+SPECIAL CASES:
+————————————————————
+std::string
+  naam        → stack (ground floor)
+  chhota data → stack hi (SSO — 15 chars tak)
+  bada data   → heap (string khud le jaata hai)
+
+std::vector
+  naam        → stack (ground floor)
+  actual data → hamesha heap (vector khud manage karta hai)
+
+GOLDEN RULES:
+————————————————————
+Primitive? (int/float/bool/char)  → stack. Always.
+new likha?                        → heap. Delete teri zimmedari.
+make_unique/make_shared?          → heap. Automatic saaf. ✅
+string/vector?                    → naam stack, data wo sambhaalte hain.
+
+NAAM HAMESHA STACK PE HOTA HAI.
+DATA KA LOCATION — new use kiya ya nahi — isse decide hota hai.
