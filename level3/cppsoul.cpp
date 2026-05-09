@@ -4,6 +4,7 @@
 
 // PROBLEM — purana tarika
 // ————————————————————————
+#include <iostream>
 void func() {
     int* arr = new int[1000];  // heap pe memory li
     // ... kuch kaam kiya
