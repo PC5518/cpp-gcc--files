@@ -15,7 +15,7 @@ class Dog:  public Animal {
 //  joojo bhi hai animal me sab aa gya dog me and extra kuch jod sktee hai public me;
 };
 int main() {
-    std::string mumma="Happy mumma day!!!! mumma";
+    std::string mumma="Happy mumma day!!!! mumma 🐹";
     int number=0;
     for (int i;i=1; i++) {
         number++;
