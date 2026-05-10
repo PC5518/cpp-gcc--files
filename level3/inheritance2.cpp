@@ -23,3 +23,5 @@ int main() {
 
 // Public  → copy ✅ + access ✅
 // Private → copy ✅ + access ❌
+// Sab copy hota hai — public aur private dono. Fark sirf itna — public use kar sakte ho, private dekh nahi sakte. 🔒
+
