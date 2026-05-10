@@ -19,3 +19,7 @@ int main() {
     //  1 is same for what we say True in python 
 
 }
+// Puri copy hoti hai — public + private dono ✅
+
+// Public  → copy ✅ + access ✅
+// Private → copy ✅ + access ❌
