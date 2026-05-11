@@ -11,6 +11,8 @@ public:
 };
 int main() {
     room *new_pointer= new room(1225);
+    (*new_pointer).print();
+    // or 
     new_pointer->print();
 }
 //  use of arrow and pointer application
