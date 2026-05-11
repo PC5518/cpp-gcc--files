@@ -10,7 +10,7 @@ public:
 
     virtual void sound() {
         std::cout << "vehicle ki awaaz" << std::endl;
-    }
+    }// “Ye function inheritance mein override ho sakta hai, aur agar parent pointer/reference se call aaye toh runtime pe actual object check karna.”
 };
 
 class Bike : public vehicle {
@@ -42,7 +42,6 @@ int main() {
     vehicle* v1 = new Bike(100, 50, 3000, true); // we did it to create memory on heap
     vehicle* v2 = new Car(200, 80, 4000); 
 // it's like Bike v1();..............
-
     v1->sound();             // Bike ka sound ✅
     v2->sound();             // Car ka sound ✅
 
