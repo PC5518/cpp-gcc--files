@@ -1,0 +1,4 @@
+virtual fxn me ye hota hai ki parent default implementation dete hai
+child usko ovveride kar sakta hai
+like void ovveride ...... kar ke child absorb karta hai same to same parent wale fxn  ko
+compiler class ke through samajhta hai ki kise lena hai and call karna hai and kis class ke under me call karna hai
