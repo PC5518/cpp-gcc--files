@@ -51,3 +51,31 @@ int main() {
     delete v1;
     delete v2;
 }
+// virtual ka matlab:
+
+// agar parent pointer/reference kisi child object ko point kar raha hai,
+// toh function call karte waqt runtime pe check karo
+// ki actual object kaunsa hai.
+
+// agar child ne us function ka apna version diya hai
+// (override kiya hai),
+// toh wahi chalao.
+
+// warna parent wala chalao.
+
+
+
+// normal object me toh compiler already jaanta hai
+// ki object Bike hai,
+// toh direct Bike wala function chal jaata hai.
+
+// virtual ka asli kaam tab aata hai
+// jab parent pointer/reference use hota hai.
+
+
+
+
+// override ek safety check hai.
+
+// compiler ko bolta hai:
+// "check kar ki main sach me parent ka virtual function override kar raha hun ya nahi"
