@@ -16,5 +16,9 @@ public:
 };
 int main() {
     vehicle *v= new Bike() ;
-    v->sound();
+    v->sound(); /// compiler kaise 
 }
+// virtual function me actual object ki class ke hisaab se
+// correct overridden function chalta hai.
+
+// vtable/vptr usko internally implement karne ka compiler mechanism hai.
