@@ -15,7 +15,7 @@ public:
     }
 };
 int main() {
-    sangeeta mumma;
+    const sangeeta mumma{};
     mumma.marks=23;
 
     std::cout<< mumma.marks<<std::endl;
