@@ -11,7 +11,9 @@ class ev: public car{
     //  yaha par jo karna hai wo karo 
 };
 int main() {
-    std::cout<< "we are under int main"<<std::endl;
+
+    car *bmwev = new ev();
+    bmwev->printing();
 }
 // pure virtual function:
 // child classes ko force karta hai
