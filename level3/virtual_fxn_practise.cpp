@@ -19,4 +19,6 @@ public:
 
 int main() {
     aimodel* chatgpt = new transformer(); // birth point of real OOP polymorphism
+// basically  transformer inherit the features of AImodel so it can work under the parent class
+
 }
