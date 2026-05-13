@@ -24,8 +24,9 @@ public:
         age =a ;
         sevis_id=s;
     } 
-    person() {
-        person
+    // ok toh mai bol rha hun ki jab use de command person()  tab upar wale constructor ko call kar dena. itni value de ke 
+    person(): person(18,256) {
+
     }
 }
 
