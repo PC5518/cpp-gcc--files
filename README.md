@@ -18,6 +18,7 @@
 - [x] bool
 - [x] Error handling intro
 - [ ] **NEXT → Functions (Level 1, Lecture 7)**
+- [ ] 
 
 ---
 
