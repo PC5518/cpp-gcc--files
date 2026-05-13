@@ -28,7 +28,7 @@ public:
     person(): person(18,256) {
 
     }
-}
+};
 
 int main() {
 
