@@ -419,6 +419,7 @@
 | **TOTAL** | **247** | **9/247** |
 
 ---
+updated on a huge scale.
 
 *Course by Mike Shah — youtube.com/c/MikeShah*
 *Full playlist: https://www.youtube.com/playlist?list=PLvv0ScY6vfd8j-tlhYVPYgiIyXduu6m-L*
