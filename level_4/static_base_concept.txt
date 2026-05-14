@@ -1,0 +1,4 @@
+so in normal case
+int x{}=0 and call again  it will  create a copy with may or may not different adress.
+but when done static int x{};
+it will be stuck to that previous or the originally created adress and perform edits.
