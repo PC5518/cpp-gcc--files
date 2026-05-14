@@ -4,6 +4,7 @@ public:
     static int marks;
     
 };
+int student::marks=0;
 int main() {
     student deva;
     student john;
