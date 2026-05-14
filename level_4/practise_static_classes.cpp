@@ -2,8 +2,9 @@
 class student {
 public:
     static int marks;
-
 };
+int student::marks{};
+
 int main() {
     student aditya;
     aditya.marks =23;
