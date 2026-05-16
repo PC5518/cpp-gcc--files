@@ -1,2 +1,1 @@
-
-    return a+b
+2
