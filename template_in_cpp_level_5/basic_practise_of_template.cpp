@@ -1,3 +1,3 @@
 #include <iostream>
-template <tempnam auto_choose>
-int mian 
+template <typename auto_type>
+auto_type 
