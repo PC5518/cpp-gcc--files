@@ -26,6 +26,6 @@ type fxn(type a, type b) {
 // anythingv
 int main() {
     std::cout<<fxn(2.23,3.0) <<std::endl;
-    std::cout<<fxn("deva", "aditya") <<std::endl;
+    std::cout<<fxn(std::string("Aditya"),  std::string(" Narayan")) <<std::endl;
     // beatifull disaster . still in mordern c++ this ghost of ancient C remains there.
 }
