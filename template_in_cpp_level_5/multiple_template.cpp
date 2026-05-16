@@ -21,6 +21,6 @@ type fxn(type a, type b) {
     return a+b;
 }
 int main() {
-    std::cout<<fxn(2.23,3.0) <<std::endl;
+    std::cout<<fxn(2,3) <<std::endl;
     std::cout<< "checking how the int and string values are different" <<std::endl;
 }
