@@ -1,0 +1,189 @@
+===============================
+TEMPLATES IN CPP — MY UNDERSTANDING
+===============================
+
+Templates ka main kaam:
+same logic ko multiple data types ke liye reusable banana.
+
+Instead of writing:
+
+int add(int a,int b)
+
+double add(double a,double b)
+
+float add(float a,float b)
+
+hum ek generic version bana dete hain.
+
+-----------------------------------
+BASIC TEMPLATE
+-----------------------------------
+
+template <typename T>
+
+T fxn(T a,T b){
+    return a+b;
+}
+
+Yahan:
+
+template<typename T>
+
+means:
+
+Compiler, T ek placeholder datatype hai.
+Baad mein function call dekhkar decide kar lena T kya hoga.
+
+-----------------------------------
+EXAMPLE
+-----------------------------------
+
+fxn(2,3)
+
+Compiler dekhta hai:
+2 -> int
+3 -> int
+
+So:
+T = int
+
+Internally compiler almost imagine karta hai:
+
+int fxn(int a,int b)
+
+-----------------------------------
+
+fxn(2.2,3.1)
+
+Compiler:
+T = double
+
+Internally:
+
+double fxn(double a,double b)
+
+-----------------------------------
+IMPORTANT REALIZATION
+-----------------------------------
+
+template<typename T>
+
+means:
+poore function mein ek hi common placeholder type use hoga.
+
+Matlab:
+
+T a
+T b
+
+both SAME type hone chahiye.
+
+-----------------------------------
+PROBLEM
+-----------------------------------
+
+fxn(2,2.1)
+
+Now compiler confused:
+
+first argument:
+2 -> int
+
+second argument:
+2.1 -> double
+
+So compiler gets two deductions:
+
+T = int
+T = double
+
+Conflict.
+
+Ek hi T do alag types nahi ban sakta.
+
+Isi wajah se error aata hai.
+
+-----------------------------------
+SOLUTION
+-----------------------------------
+
+Use multiple template parameters.
+
+template<typename type1, typename type2>
+
+auto fxn(type1 a,type2 b){
+    return a+b;
+}
+
+Now:
+type1 and type2 are independent placeholders.
+
+Compiler ko freedom mil gaya.
+
+-----------------------------------
+EXAMPLE
+-----------------------------------
+
+fxn(7,2.4)
+
+Compiler deduces:
+
+type1 = int
+type2 = double
+
+Internally compiler imagines almost:
+
+double fxn(int a,double b)
+
+No confusion now.
+
+-----------------------------------
+IMPORTANT
+-----------------------------------
+
+Before:
+compiler ke paas sirf ek placeholder type tha.
+
+Now:
+compiler ke paas multiple independent placeholder types hain.
+
+-----------------------------------
+AUTO RETURN TYPE
+-----------------------------------
+
+auto fxn(...)
+
+means:
+compiler khud return type deduce karega.
+
+For example:
+
+int + double -> double
+
+So auto becomes double.
+
+-----------------------------------
+CORE MENTAL MODEL
+-----------------------------------
+
+Templates are basically datatype placeholders.
+
+Compiler later replace karta hai:
+T
+type1
+type2
+
+with actual datatypes depending on function arguments.
+
+-----------------------------------
+MOST IMPORTANT THING
+-----------------------------------
+
+Templates magic nahi hain.
+
+Compiler bas:
+- argument types dekhta hai
+- placeholders fill karta hai
+- actual function generate karta hai
+
+at compile time.
