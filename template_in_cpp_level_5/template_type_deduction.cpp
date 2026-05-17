@@ -19,4 +19,5 @@ type fxn(type a, type b) {
 int main() {
     std::cout<<fxn(2,3) <<std::endl;
     std::cout<< "checking how the int and string values are different" <<std::endl;
+    std::cout<<"this is just a testing the code for mind evaluation" <<std::endl;
 }
