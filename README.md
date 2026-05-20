@@ -133,7 +133,7 @@
 |---|-------|------|
 | L5-01 | Generics 1 — Templates Introduction | ⬜ |
 | L5-02 | Generics 2 — Template Functions & Abbreviated function templates | ⬜ |
-| L5-03 | Generics 3 — Multiple template parameters & non-type parameters | ⬜ |
+| L5-03 | Generics 3 — Multiple template parameters (done and understood with logic i.e with my own logic) & non-type parameters | ⬜ |
 | L5-04 | Generics 4 — Template Functions Full & Partial Specialization | ⬜ |
 | L5-05 | Generics 5 — Variadic arguments & Variadic Function Templates | ⬜ |
 | L5-06 | Generics 6 — Improving a Function Template (Review) | ⬜ |
