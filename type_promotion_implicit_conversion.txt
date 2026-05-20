@@ -1,0 +1,83 @@
+-----------------------------------
+ARITHMETIC TYPE PROMOTION
+-----------------------------------
+
+Example:
+
+1 + 2.3
+
+Here:
+
+1   -> int
+2.3 -> double
+
+Even though types are different,
+C++ automatically promotes:
+
+int -> double
+
+So internally it behaves almost like:
+
+1.0 + 2.3
+
+Result:
+3.3
+
+-----------------------------------
+IMPORTANT
+-----------------------------------
+
+This is a native C++ feature called:
+
+- implicit conversion
+- type promotion
+
+Compiler automatically converts smaller numeric types into larger compatible types during arithmetic operations.
+
+-----------------------------------
+VERY IMPORTANT DISTINCTION
+-----------------------------------
+
+This is DIFFERENT from template type deduction.
+
+Arithmetic expressions:
+compiler is allowed to convert types.
+
+Example:
+
+1 + 2.3
+
+works because:
+int gets promoted to double.
+
+-----------------------------------
+BUT TEMPLATE DEDUCTION IS DIFFERENT
+-----------------------------------
+
+Example:
+
+template<typename T>
+
+T fxn(T a,T b)
+
+fxn(1,2.3)
+
+Here compiler first tries exact template deduction:
+
+1   -> suggests T = int
+2.3 -> suggests T = double
+
+Conflict occurs because ONE placeholder T
+cannot become TWO different types.
+
+So deduction fails before arithmetic conversion happens.
+
+-----------------------------------
+CORE UNDERSTANDING
+-----------------------------------
+
+Arithmetic operation phase:
+compiler may promote types.
+
+Template deduction phase:
+compiler first tries exact placeholder matching.
