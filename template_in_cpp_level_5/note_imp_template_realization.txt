@@ -1,0 +1,92 @@
+-----------------------------------
+IMPORTANT TEMPLATE REALIZATION
+-----------------------------------
+after knowing implicit conversion theory as a native cpp feature i got to know this.
+Earlier I thought:
+
+int and double together themselves create conflict.
+
+But that is NOT the real issue.
+
+Because:
+
+1 + 2.4
+
+works perfectly in normal arithmetic.
+
+C++ automatically performs:
+
+implicit conversion / type promotion
+
+and promotes:
+
+int -> double
+
+Conceptually:
+
+1 becomes 1.0
+
+-----------------------------------
+THEN WHAT WAS THE REAL PROBLEM?
+-----------------------------------
+
+The actual problem was:
+
+placeholder conflict during template deduction.
+
+Example:
+
+template<typename T>
+
+T fxn(T a,T b)
+
+Here:
+
+T is ONE shared placeholder type.
+
+So:
+
+fxn(1,2.4)
+
+tries to deduce:
+
+T = int
+T = double
+
+for the SAME placeholder T.
+
+That creates conflict.
+
+-----------------------------------
+VERY IMPORTANT
+-----------------------------------
+
+The error happens BEFORE arithmetic conversion.
+
+Template deduction phase happens first.
+
+Arithmetic implicit conversion happens later.
+
+-----------------------------------
+SOLUTION
+-----------------------------------
+
+Using multiple placeholders:
+
+template<typename T, typename U>
+
+Now compiler can do:
+
+T = int
+U = double
+
+No placeholder conflict anymore.
+
+After successful deduction,
+normal implicit conversion can happen during arithmetic.
+
+Example:
+
+int + double
+
+int gets promoted to double.
