@@ -4,5 +4,5 @@ type fxn(type input) {
     std::cout<<input<< std::endl;
 }
 int main() {
-    fxn("shdn");
+    fxn(5);
 }
