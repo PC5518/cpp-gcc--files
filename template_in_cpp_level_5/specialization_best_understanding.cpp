@@ -1,4 +1,5 @@
 #include <iostream>
+#include <string>
 // we can get the intution of template by python:
 // Conceptually, specialization is VERY similar to:
 
@@ -11,7 +12,7 @@
 // else:
 //     generic_behavior()
 template <typename type>
-auto fxn(type value) {
+auto   fxn(type value) {
     std::cout<<value << std::endl;
 }
 // now i want to add that if the particular value is a int then print like this:
@@ -20,5 +21,5 @@ auto fxn<std::string>(std::string value) {
     std::cout << "this is a string value"<<value <<std::endl;
 }
 int main() {
-    std::cout<<fxn(std::string("hey there ")) <<std::endl;
+    fxn(std::string("this is the sample output"));
 }
