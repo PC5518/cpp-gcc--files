@@ -11,7 +11,5 @@ int main() {
     // baad me wo change kar skta hai apne datatype ko accordingly
     // ek aur baar ki yaaha int ke jagah std::string bhi de sakte hai and agar alag hua toh type wala type manage kar dega. 
     ford.speed=23;
-}
-int main() {
-    std:cout<<ford.speed <<std::endl;
+    std::cout<<ford.speed << std::endl;
 }
