@@ -16,5 +16,4 @@ int main() {
     car<std::string>  tata;
     tata.speed="tata speed is being prinetd";
     std::cout<< tata.speed<<std ::endl;
-
 }

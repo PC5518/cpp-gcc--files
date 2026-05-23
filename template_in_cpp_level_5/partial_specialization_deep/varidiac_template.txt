@@ -1,0 +1,2 @@
+now first of all vardiac means variable number of argument.
+this is the fact that i noticed a lot.
