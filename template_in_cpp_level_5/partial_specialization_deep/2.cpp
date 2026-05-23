@@ -3,6 +3,9 @@ template <typename type>
 class car {
 public:
     type speed;
+    type deva;
+    type himanshu;
+    type model_number;
     void show() {
         std::cout<<speed  <<std::endl;
     }
