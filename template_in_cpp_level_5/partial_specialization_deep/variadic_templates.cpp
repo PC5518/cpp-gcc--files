@@ -1,7 +1,8 @@
 #include <iostream>
 // Variadic Template =
 // Flexible number of parameters
-template <typename... Args>
+template <typename... Args> // iska matlaab hua agar koi simple type nahi hai available ...  se hm aur bhi type ke access me le sakte hai
+// like for exampek int double std::string
 void print(Args... args) {
     std::cout<< <<std::endl;
 }
