@@ -21,3 +21,11 @@ public:
 
 car ford;       // speed = 0   ← default ✅
 car bmw(200);   // speed = 200 ← specific ✅
+
+
+
+
+
+
+constructor ka use hota hai value variable ke memory me instantly dene ke liye.
+before the compiler even goes to it. 
