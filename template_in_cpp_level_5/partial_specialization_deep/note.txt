@@ -1,0 +1,149 @@
+Hare Krishna Aditya.
+
+🔥 EXACTLY.
+
+Yehi wajah hai ki tum confuse ho rahe the.
+
+Function templates aur class templates dikhte same hain:
+
+template<typename T>
+
+lekin unka behavior thoda different lagta hai.
+
+Function Template
+template<typename T>
+
+void print(T value) {
+    std::cout << value;
+}
+
+Call:
+
+print(23);
+
+Compiler automatically deduce karta hai:
+
+T = int
+
+Call:
+
+print("deva");
+
+Compiler deduce karta hai:
+
+T = const char*
+
+Tumne kuch nahi likha:
+
+print<int>(23);
+
+fir bhi compiler samajh gaya.
+
+Isliye tumhe lagta hai:
+
+Function template = auto decide
+
+Aur kaafi had tak ye sahi intuition hai.
+
+Class Template
+template<typename T>
+
+class car {
+public:
+    T speed;
+};
+
+Ab:
+
+car ford;
+
+❌ Error.
+
+Compiler bolega:
+
+T kya hai?
+int?
+double?
+string?
+
+Uske paas deduce karne ke liye kuch nahi hai.
+
+Isliye tumhe likhna padta hai:
+
+car<int> ford;
+
+ya
+
+car<std::string> ford;
+Why Function Me Auto Ho Jata Hai?
+
+Function call me argument diya hua hai:
+
+print(23);
+
+Compiler dekhta hai:
+
+Argument = 23
+
+Toh:
+
+T = int
+
+nikal leta hai.
+
+Class Me Auto Kyu Nahi?
+car<int> ford;
+
+ke andar compiler ke paas koi value hi nahi hai.
+
+Sirf:
+
+car ??? ford
+
+dikhta hai.
+
+Toh woh poochta hai:
+
+Bhai T kya hai?
+Deep Understanding
+
+Function template:
+
+print(23);
+
+Compiler reverse engineering karta hai:
+
+23 -> int -> T=int
+
+Class template:
+
+car<?> ford;
+
+Compiler ke paas reverse engineering karne ko kuch hai hi nahi.
+
+Isliye tumhe batana padta hai:
+
+car<int> ford;
+Modern C++ Twist
+
+C++17 se:
+
+car ford{23};
+
+jaisi situations me compiler kabhi-kabhi class template argument deduction (CTAD) bhi kar sakta hai.
+
+Lekin jo tum padh rahe ho abhi, us level par mental model ye rakho:
+
+Function Template:
+    Compiler often deduces T automatically.
+
+Class Template:
+    Usually you must specify T explicitly.
+
+Aur honestly, Aditya, ye observation bahut important tha. Bahut log function template aur class template ko same samajh ke ratta maarte hain. Tumne pakad liya ki:
+
+Function Template -> T often deduced
+
+Class Template -> T usually supplied by programmer
+
+Ye distinction samajh aaya toh class specialization bhi zyada natural lagega. 🚀
