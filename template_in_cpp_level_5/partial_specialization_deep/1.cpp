@@ -3,13 +3,10 @@
 template <typename type>
 class car {
 public:
-    type speed;
-    car(type input) {
-        speed=input;
-    } // now in class template automaticaly type select nahi hota hai.
+    type speed; // now in class template automaticaly type select nahi hota hai.
 };
 int main() {
-    car ford(23544);
+    car<int> ford;
+    ford.speed=string("deva ");
     std::cout<< ford.speed<< std::endl;
-
 }
