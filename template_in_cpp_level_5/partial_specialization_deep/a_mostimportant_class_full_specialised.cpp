@@ -20,3 +20,14 @@ int main() {
     bmw.show();
 
 }
+
+//  compiler ka logic
+// important hai samajhna. 
+// car<int>
+//     -> specialised version
+
+// car<double>
+//     -> generic version
+
+// car<string>
+    // -> generic version
