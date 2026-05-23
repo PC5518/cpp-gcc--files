@@ -8,8 +8,10 @@ public:
 int main() {
     car<int> ford; //  actually class ko pata nhi hai pahle se ki andar ke items ka type hai kya
     //  here compiler knows rhe type already as "type" but the actual tyype is not defiend yet. that's why it will create an error.
+    // mistake:  it won't create an error here . 
     // baad me wo change kar skta hai apne datatype ko accordingly
     // ek aur baar ki yaaha int ke jagah std::string bhi de sakte hai and agar alag hua toh type wala type manage kar dega. 
-    ford.speed=23;
+    ford.speed="heu there "; 
     std::cout<<ford.speed << std::endl;
 }
+//  this is not at all clear yet. i will start with a new file named partial_Specialisation_in_deep.
