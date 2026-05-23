@@ -6,10 +6,11 @@ void print(Args... args) {
     std::cout<< <<std::endl;
 }
 
-
+// this is a template based fxn of dynamic amount of argument or parameters
 
 
 
 int main() {
-    std::cout<< <<std::endl;
+    print(1,2,2,544, std::string("deva"));
+
 }
