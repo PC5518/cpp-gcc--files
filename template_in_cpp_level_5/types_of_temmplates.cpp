@@ -7,6 +7,7 @@ void print(a value1, b value2) {
     cout << value1<<" " << value2<<endl;
 }
 int main() {
+    
     print(2, std::string("deva"));
 }
 //  next is the class based template
