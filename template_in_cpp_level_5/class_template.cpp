@@ -14,4 +14,5 @@ int main() {
     ford.speed="heu there "; 
     std::cout<<ford.speed << std::endl;
 }
+
 //  this is not at all clear yet. i will start with a new file named partial_Specialisation_in_deep.
