@@ -15,6 +15,7 @@ template <typename class_type, typename another_name>
 class data {
 public:
     class_type age;
+    
     another_type id;
 };
 // basically let the compiler automatically decides the datatype presented in the code.
