@@ -12,7 +12,7 @@ template <typename... type >
 // Types ka packet (pack) aa sakta hai.
 void print(type... input_variable) {
     // write the fxn here
-    ((std::cout<< input_variable<<std::endl), ...);
+    ((std::cout<< input_variable<<std::endl), ...); // mordern c++ 17 fix
 } //  now the problem is that the compiler thinks and doubt but koan sa wala pehla wala yaa baad wala ??????
 // therefore it is required to expand the package therefore we use ... after the input_variable statement
 int main() {
