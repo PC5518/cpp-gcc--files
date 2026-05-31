@@ -1,7 +1,7 @@
 #include <iostream>
 constexpr int square(int x) {
     return x*x;
-
+// when we call this fxn the value and insertion in the temporary object happns in the pre-cpu computation phase when it translates into machine code.  i.e pre-compilation phase.
 }
 int main() { 
     int x=154;
