@@ -1,6 +1,11 @@
 #include <iostream>
+constexpr int square(int x) {
+    return x*x;
+
+}
 int main() { 
     int x=154;
+    std::cout<<"the square of 99 is: " <<square(99);
     //  normally what happens is that program starts then x gets the value 5 and then so  onnnnn............
 //     What happens?
 
@@ -24,3 +29,8 @@ int main() {
 }
 // very imp fact
 //  accha toh iska matlab jo kaaam runtime ke time me hota hai wo kaam compilation ke time bhi ho skta hai ????
+// answer is yes! 
+// the core idea:  Jo kaam CPU runtime ke time karta tha, wo compilation ke dauran pehle hi ho sakta hai. 
+
+// iska use aata hai jaaha baat computing ki aati hai. for exampels this can also be used in fxns also.
+// let's form a square fxn
