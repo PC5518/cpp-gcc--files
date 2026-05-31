@@ -1,0 +1,120 @@
+# C++ Style Guide Notes
+
+## 1. Meaningful Names
+
+Bad:
+
+```cpp
+int a;
+int b;
+```
+
+Good:
+
+```cpp
+int studentCount;
+int totalMarks;
+```
+
+Use names that explain the purpose of the variable.
+
+---
+
+## 2. Consistent Naming Style
+
+Choose one style and stick to it.
+
+camelCase:
+
+```cpp
+int totalMarks;
+int studentCount;
+```
+
+snake_case:
+
+```cpp
+int total_marks;
+int student_count;
+```
+
+Avoid mixing styles in the same project.
+
+---
+
+## 3. Proper Indentation
+
+Bad:
+
+```cpp
+if(x>10){
+std::cout<<x;
+}
+```
+
+Good:
+
+```cpp
+if (x > 10)
+{
+    std::cout << x;
+}
+```
+
+Readable code is easier to debug and maintain.
+
+---
+
+## 4. Avoid Magic Numbers
+
+Bad:
+
+```cpp
+if (marks > 37)
+```
+
+Good:
+
+```cpp
+const int PASS_MARKS = 37;
+
+if (marks > PASS_MARKS)
+```
+
+Rule:
+
+If a number has meaning, give it a descriptive name.
+
+Examples:
+
+```cpp
+const int MAX_PLAYERS = 100;
+const double PI = 3.1415926535;
+const int PASS_MARKS = 37;
+```
+
+---
+
+## 5. Write Self-Explanatory Code
+
+Bad:
+
+```cpp
+int d;
+```
+
+Good:
+
+```cpp
+int distance;
+```
+
+Code should explain itself whenever possible.
+
+---
+
+## Key Principle
+
+Code is read far more often than it is written.
+
+Write code so that future-you or another programmer can understand it quickly.
