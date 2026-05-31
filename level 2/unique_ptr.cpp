@@ -15,6 +15,6 @@
 // yani  adress be del, data bhi delete,  sab kuch shred
 int main() {
     int deva=234;
-    std::make_unique(deva)
+    std::make_unique(deva);
 }
 // we can also use "using namespace as std"
