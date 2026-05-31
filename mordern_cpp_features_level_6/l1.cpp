@@ -19,4 +19,17 @@ int main() {
     // yes, make_unique was intentionally designed to create an object and immediately wrap it inside a unique_ptr.
     std::unique_ptr<int> deva(new int(100));
     std::cout<< *deva<<std::endl;
+    // let's see shared pointer 
+    std::shared_ptr<int> sample(new int(100));
+    auto sample2 =sample;
+
+    std::cout<<"shared pointer analysis//////////////////////////////////////////////////////////////////" <<std::endl;
+    std::cout<<*sample<< " :sample value" <<std::endl;
+    std::cout<< *sample2<<std::endl;
+    (*sample2)++;   
+    std::cout<<"shared pointer analysis//////////////////////////////////////////////////////////////////" <<std::endl;
+    std::cout<<*sample<< " :sample value" <<std::endl;
+    std::cout<< *sample2<<std::endl;
+    // so if one changes every other changes.
+    
 }
