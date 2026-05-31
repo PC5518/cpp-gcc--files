@@ -3,8 +3,13 @@
 union data {
     int number;
     // std::string datanumber; this is creating problems
+    // cuz historically union was maded for simple data types
+    int number2;
 };
 int main() {
     data Xiaomi;
-    std::cout<< <<std::endl;
+    Xiaomi.number=12;
+
+    std::cout<< Xiaomi.number<<std::endl;
+    std::cout<< Xiaomi.number2 << "this is number 2"<<std::endl;
 }
