@@ -22,7 +22,7 @@ int main() {
 // The CPU will handle it when the program starts.
 // similarly
     int deva =3+34;
-    // here also cpu calculates and store the data into it. 
+    // here also cpu calculates and store the data into it.   A BIG NOTE: mordern compiler often optimizes this condition as they are very smart.
     // now when we do this thing:
     constexpr int anscom=23+738;
     // it means saveit and pack it into under the variable name by assigning a memory
