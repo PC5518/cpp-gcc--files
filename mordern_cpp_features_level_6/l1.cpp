@@ -32,4 +32,4 @@ int main() {
     std::cout<< *sample2<<std::endl;
     // so if one changes every other changes.
     
-}
+} 
