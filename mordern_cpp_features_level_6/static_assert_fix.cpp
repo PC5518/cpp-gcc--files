@@ -2,7 +2,7 @@
 #include <cassert>
 int main() {
     constexpr int age=-7;
-    static_assert(age>=0);
+    static_assert(age>=0); // throw an error
 //  the only difference is that  it will run at the time of compilation only. 
 // that the main difference of proccessing and working
 } 
