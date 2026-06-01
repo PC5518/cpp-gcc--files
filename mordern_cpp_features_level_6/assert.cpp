@@ -12,3 +12,8 @@ int main() {
 // here we can use assert the compiler for obvious things.
 // in simple words assert ke through mai strict requiremnt set karta hun for the variable.
 // it will crash fi the requirement are not satisfied.
+// this is just a programmer assumption checker.
+
+
+
+// extra knowledge: it's checked at the runtime.
