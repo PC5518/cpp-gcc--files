@@ -9,3 +9,4 @@ int main() {
     // now in the case when we know that the age can't be less than zero.
     // to let the program know basic things before execution we assert it.
 }
+// here we can use assert the compiler for obvious things.
