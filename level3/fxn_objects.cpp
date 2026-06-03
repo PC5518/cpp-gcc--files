@@ -6,10 +6,11 @@ public:
         return a+b; // now this is a member fxn
     }
 };
-// this one is a functor
+// this one is a functor now it inccludes something which smells like operator and 
+
 class truck {
 public:
-    int operator()(int a, int b) {
+    int operator()(int a, int b) { // operator is predefined
         return a+b;
     }
 };
