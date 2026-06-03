@@ -10,4 +10,6 @@ int main() {
         cout<< i
         <<" ";
     }
+    cout<< " " <<endl;
+    cout<< array.size();
 }
