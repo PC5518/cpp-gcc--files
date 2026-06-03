@@ -7,3 +7,4 @@ int main() {
 // ->    it's an built in operator.like if else while sizeof return 
     std::cout<<integer <<std::endl;
 }
+// casting means type conversions. 
