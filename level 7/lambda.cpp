@@ -14,6 +14,10 @@ int main() {
     std::cout<< [](int a, int b) {
         return  a+b;
     }(1,3);
+    auto square =[](int a) {
+        return a*a;
+    };
+    square(10);
 }
 // this is lambda . just or simply a one time fxn use way
-// very easy/ remember it!!!  iteration.
+// very easy/remember it!!!  iteration.
