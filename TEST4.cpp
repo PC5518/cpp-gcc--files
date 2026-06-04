@@ -9,3 +9,5 @@ int main() {
     std::cout<< deva<< std::endl;
 
 }
+// to be seen again.  
+//  void is somewhere more deeper.
