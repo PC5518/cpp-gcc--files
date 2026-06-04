@@ -22,3 +22,4 @@ int main() {
 // error ! 
 // now kahani me twist
 }
+// actauilly compiler is like mujhe gurantee nahi ki show() fxn modify nahi karega
