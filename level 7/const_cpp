@@ -1,0 +1,10 @@
+#include <iostream>
+class student{ 
+public: 
+    int marks=23;
+    void increase()   const  { // what does it means to have a const just before the scope.
+        marks++;
+        // now this const means "ye fxn object ko modidy nahi kar skta. iska object par koi haq nahi hai "
+        // althought the object can be modified by other means
+    }
+};
