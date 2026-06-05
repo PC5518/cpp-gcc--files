@@ -2,7 +2,7 @@
 // moving to the advance level of lambda fxn 
 int main() {
     int x =10;
-    auto fxn =  [&x](int y) {
+    auto fxn =  [&x](int y) { // this is the capture list [] yani lambda ne ye value capture kar liya.
         x=  x+y; ; // now this is error becaause lamda ke anda x exist hi nahi karta. 
     };
     fxn(7); // so lambda can also edit the variable using reference.
