@@ -25,3 +25,18 @@ int main() {
 // itna chotta fxn toh ok
 // mai sidha yahi chipka deta hun.
 // so internally it does std::cout<< (x*x ); 
+
+
+
+
+// Real World
+
+// Modern compilers bahut smart hain.
+
+// Wo dekhte hain:
+
+// Tiny function?
+// Inline likely.
+
+// Huge function?
+// Probably not.
