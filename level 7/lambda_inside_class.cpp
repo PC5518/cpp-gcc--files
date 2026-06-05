@@ -12,3 +12,6 @@ int main() {
     aditya.show();
 }
 // but what if i involed lamvda ??? we will see in the next file
+// [this] captures the current object.
+// It allows the lambda to access the object's data members
+// and member functions, including private members.
