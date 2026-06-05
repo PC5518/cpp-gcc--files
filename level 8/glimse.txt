@@ -1,0 +1,16 @@
+LEVEL 8 — STL Containers Part 1 (14 Videos)
+#	Topic	Done
+L8-01	STL — Short Overview	⬜
+L8-02	std::string, char*, const char*, string literals	⬜
+L8-03	std::string_view and when to use vs std::string	⬜
+L8-04	std::array (C++11)	⬜
+L8-05	std::span	⬜
+L8-06	std::vector (deep dive)	⬜
+L8-07	Commenting the 'why' in your code	⬜
+L8-08	std::list	⬜
+L8-09	std::forward_list	⬜
+L8-10	std::deque	⬜
+L8-11	std::set	⬜
+L8-12	std::unordered_set (C++11)	⬜
+L8-13	std::multiset (and comparing non-trivial types)	⬜
+L8-14	std::unordered_multiset (C++11) and custom hash function	⬜
