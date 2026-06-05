@@ -4,7 +4,7 @@
 class Person {
     int height;
     Person(int height) {
-        this->height=height;
+        this->height=height; // it tells the compiler to take from the variable that belongs to the outside of the object or the object part. it avoids the parameters.
 
     }
 };
