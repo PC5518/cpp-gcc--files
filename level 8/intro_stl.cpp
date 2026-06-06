@@ -15,7 +15,7 @@
 // Searching
 
 //  noww here we are not required to develop an algorithm and use it for things like sorting, searching linkedlist , array, stack,  map. queue etc.
-//  stl provides the solutions to these things just as infosys, wipro, tcs , zensar technologies, newgen tech, etc.....  like indian it companies . haha just joking 😀
+//  stl provides the solutions to these things just as zensar technologies, newgen tech, etc.....  like indian it companies . haha just joking 😀
 
 // iterators are the way to explore the container : list me ghumne ka pranali(method) hai
 
