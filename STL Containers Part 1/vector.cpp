@@ -9,7 +9,10 @@ int main() {
     for (int i: vector_list) {
         std::cout<< i<<std::endl;
     }
-    std::cout<< "the vector size is "<< vector_list.size() <<std::endl; // now the .size() fxns differ from that of array as it can also change on the runtime.
+    std::cout<< "the vector size is "<< vector_list.size() <<std::endl; // now the .size() fxns differ from that of array as it can also change on the runtime it means they are dynamic and not statics as array.
     // we can think vector as a resizable array.
-    
+    std::cout <<vector_list[5] <<std::endl;
+    // it's accesible
+    std::cout<< "the first element with the index zero is " << vector_list.front()<<std::endl; // now this can be used to get the front or the very first or the element with index zero (0);
+    std::cout<<"the last element of the vector is " <<vector_list.back()<<std::endl;
 }
