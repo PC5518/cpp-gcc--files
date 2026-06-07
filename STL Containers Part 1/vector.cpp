@@ -15,4 +15,21 @@ int main() {
     // it's accesible
     std::cout<< "the first element with the index zero is " << vector_list.front()<<std::endl; // now this can be used to get the front or the very first or the element with index zero (0);
     std::cout<<"the last element of the vector is " <<vector_list.back()<<std::endl;
+    // the biggest idea is that: vectors store elements contiguously 
+    // Meaning:
+
+// [10][20][30][40]
+
+// not
+
+// [10] --> [20] --> [30]
+
+// That's list.
+    // to delete the last element of the vector we do :
+    vector_list.pop_back();
+    for (int i: vector_list) {
+        std::cout<< i<< " ";
+    }
+    
+
 }
