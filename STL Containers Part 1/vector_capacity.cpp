@@ -8,4 +8,4 @@ int main() {
     v.push_back(10); // 2nd item which is being added here and still 2 can be added more . after 5 are utilised again we have ccapcity 10 and size also 10 therefore 10 more will be added for future elements that will be added.
     std::cout<<v.capacity() <<std::endl;
 }
-// ye jyada de deta in advance ki taki bar bar mangna naa pade.
+// ye jyada de deta in advance ki taki bar bar memory mangna naa pade.
