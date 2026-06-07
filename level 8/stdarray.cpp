@@ -16,4 +16,8 @@ int main() {
     for (int i: stdarray ) {
         std::cout<< i << " ";
     }
+    // difference from vectors: 
+    // array's size is fixes std::array<int, 5>
+    // so overall array libraru is just like olf c style array + stl features
+    // if size changes, use vector
 }
