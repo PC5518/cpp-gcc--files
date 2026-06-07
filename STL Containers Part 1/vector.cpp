@@ -9,5 +9,7 @@ int main() {
     for (int i: vector_list) {
         std::cout<< i<<std::endl;
     }
-
+    std::cout<< "the vector size is "<< vector_list.size() <<std::endl; // now the .size() fxns differ from that of array as it can also change on the runtime.
+    // we can think vector as a resizable array.
+    
 }
