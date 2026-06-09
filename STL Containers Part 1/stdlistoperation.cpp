@@ -24,5 +24,5 @@ int main() {
     }
     std::cout<< "the inital node data of then list is: "<< lst.front() << std::endl;
 
-    std::cout<< "the last node data of then list is: "<< lst.back() << std::endl;
+    std::cout<< "the last node data of then list is: "<< lst.back() << std::endl; //
 }
