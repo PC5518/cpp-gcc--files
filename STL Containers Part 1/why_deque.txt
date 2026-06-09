@@ -1,0 +1,131 @@
+STL Containers - WHY DEQUE EXISTS
+
+1) C Array
+-----------
+int arr[5];
+
+Pros:
+- Very fast
+- Contiguous memory
+
+Cons:
+- Fixed size
+- Cannot grow
+- No STL features
+
+Why not enough?
+- Size cannot change.
+
+
+2) std::vector
+--------------
+std::vector<int> v;
+
+Pros:
+- Dynamic size
+- Fast indexing: v[i]
+- Contiguous memory
+- Fast push_back()
+
+Cons:
+- No push_front()
+- Inserting at front shifts many elements
+
+Example:
+[10][20][30]
+
+Insert 5 at front:
+
+[5][10][20][30]
+
+Need to move:
+10, 20, 30
+
+Why not enough?
+- Front insertion is expensive.
+
+
+3) std::forward_list
+--------------------
+10 -> 20 -> 30
+
+Pros:
+- Very cheap insertion
+- Small memory per node
+
+Cons:
+- No random access
+- Only move forward
+- Finding last node is slow
+
+Why not enough?
+- Accessing element 5000 requires walking through nodes.
+
+
+4) std::list
+------------
+10 <-> 20 <-> 30
+
+Pros:
+- Cheap insertion/removal
+- Can move forward and backward
+
+Cons:
+- More memory (prev + next pointers)
+- No random access
+- Usually slower than vector in practice
+
+Why not enough?
+- Access by index is poor.
+
+
+5) std::deque
+-------------
+Double Ended Queue
+
+Think:
+
+Front <- [10][20][30] -> Back
+
+Pros:
+- Fast push_front()
+- Fast push_back()
+- Supports indexing: d[i]
+- Dynamic size
+
+Cons:
+- Memory layout more complex than vector
+- Slightly less cache-friendly than vector
+
+Why deque was created?
+Vector gives:
+✓ Fast indexing
+✓ Fast push_back()
+✗ Fast push_front()
+
+List gives:
+✓ Fast insertion
+✗ Fast indexing
+
+Deque tries to combine:
+
+✓ Fast push_front()
+✓ Fast push_back()
+✓ Fast indexing
+
+This is the main reason deque exists.
+
+
+Quick Ranking (Practical Usage)
+-------------------------------
+vector          10/10
+unordered_map    9/10
+deque            7/10
+set              7/10
+array            6/10
+list             3/10
+forward_list     2/10
+
+Golden Rule:
+Start with vector.
+Use deque when you frequently add/remove from BOTH front and back.
