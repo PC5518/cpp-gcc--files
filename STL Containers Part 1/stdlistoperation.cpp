@@ -1,5 +1,7 @@
 #include <iostream>
 #include <list>
+// the most important fact about list we cannot access the elements via index !
+// for example: list[23] innaccesible
 int main() {
     std::list<int> lst={1,4,24,2,242};
     lst.push_back(10); // push_front in similar form
