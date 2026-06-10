@@ -1,0 +1,77 @@
+Collected comments and inferred understanding — from folder: STL Containers Part 1
+
+--- File: intro_stl.cpp
+// Array
+// Linked List
+//  noww here we are not required to develop an algorithm and use it for things like sorting, searching linkedlist , array, stack,  map. queue etc.
+// iterators are the way to explore the container : list me ghumne ka pranali(method) hai
+// std::vector<int> v;
+// Sort ko vector ke andar nahi dala.
+// vector
+// array
+// std::vector<int> v = {5,2,9,1};
+
+Notes (intro_stl.cpp): You wrote that STL containers (vector, array, list) remove the need to implement algorithms for basic tasks; iterators are the way to traverse containers. You referred to vectors and arrays and noted sorting and traversal.
+
+--- File: l2.cpp
+// to understand it we can use the old c language based char list based memory allocation;
+char list[]= "Aditya"; // now this is a list containing character
+// let's come to char list
+char* ptr = list;  // Array ka naam (list) normal variable ki tarah behave nahi karta. most expression me list automatically convert ho jata hai i.e &list[0]
+// | A | d | i | t | y | a | \0 | this \0 means that the data list is over;
+
+Notes (l2.cpp): You used a char array to explain C-style arrays: name decays to pointer, characters end with '\0', and you called it a "list" (informal). This shows you understand array-to-pointer conversion and string termination.
+
+--- File: stdarray.cpp
+// just like vectors
+// difference from vectors: 
+// array's size is fixes std::array<int, 5>
+// so overall array libraru is just like olf c style array + stl features
+// if size changes, use vector
+
+Notes (stdarray.cpp): You understand that `std::array` is fixed-size (like C arrays) with STL helpers (begin/end/size), and that `std::vector` should be used when size must change.
+
+--- File: stdlist.cpp
+// it's a doubled linked list
+
+Notes (stdlist.cpp): You noted `std::list` is a doubly-linked list (implying O(1) splices and cheap insert/erase, but likely poorer cache locality).
+
+--- File: char_list.cpp / chararray.cpp / constcharstar.cpp
+char array[]=  "Aditya";
+for (char i : array) {
+const char* array[]= {
+
+Notes: Examples using C-style char arrays and iteration show understanding of array initialization and ranged-for traversal.
+
+--- File: vector_capacity.cpp
+std::cout<<v.capacity() <<std::endl; // vector capacity is measured in elements rather than bits or bytes
+
+Notes (vector_capacity.cpp): You recorded that `vector::capacity()` reports element count (not bytes) — correct and useful for understanding growth.
+
+--- File: why_deque.txt
+1) C Array
+2) std::vector
+std::vector<int> v;
+3) std::forward_list
+4) std::list
+- Usually slower than vector in practice
+- Memory layout more complex than vector
+- Slightly less cache-friendly than vector
+Vector gives:
+List gives:
+vector          10/10
+array            6/10
+list             3/10
+forward_list     2/10
+Start with vector.
+
+Notes (why_deque.txt): You ranked containers by preference (vector highest). You noted linked containers (list/forward_list) are usually slower and less cache-friendly than vectors, and recommended starting with `vector` — a sensible heuristic.
+
+--- Summary of what you wrote and how you understood it
+- You distinguish fixed-size arrays (`std::array` / C arrays) from dynamic `std::vector` and know to choose `vector` when size changes.
+- You understand `std::list` is a (doubly) linked list and that linked lists have different performance characteristics (slower, less cache-friendly) compared to `vector`.
+- You know iterators are the standard way to traverse STL containers.
+- You know `vector::capacity()` is expressed in elements.
+- You showed practical C-style array knowledge: name-to-pointer decay and null-terminated char arrays.
+
+If you want, I can: extract more lines, include exact line numbers, or create a cleaned summary file in markdown.
