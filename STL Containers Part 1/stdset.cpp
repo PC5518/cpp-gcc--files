@@ -14,4 +14,15 @@ int main() {
     std::cout<< " " <<std::endl;
     std::cout<<"set has no indexing because it is not an array. it's an tree" <<std::endl;
     // now the biggest thing is that set is not an array . it's an tree. tree don't have element one two or .....
+    // that's the main reason we don't use syntax like push_back or front or index it or popback or front 
+    s.erase(23);
+    // this is possible only one 23 will be there and if yes then it will erase it.
+    for (int i  :  s) {
+        std::cout<< i<< " ";
+    }
+    std::cout<<" "<<std::endl;
+    // auto it=  s.find(10);
+    // std::cout << it<<std::endl;
+    std::cout <<"" <<std::endl;
 }
+
