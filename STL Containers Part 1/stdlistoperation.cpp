@@ -24,7 +24,12 @@ int main() {
     for (int i: lst) {
         std::cout<< i <<std::endl;
     }
-    std::cout<< "the inital node data of then list is: "<< lst.front() << std::endl;
+    std::cout<<"*********************" <<std::endl;
+    lst.push_front(10) ;
+    // the last node is destroyed
+    for (int i: lst) {
+        std::cout<< i <<std::endl;
+    }   std::cout<< "the inital node data of then list is: "<< lst.front() << std::endl;
 
     std::cout<< "the last node data of then list is: "<< lst.back() << std::endl; //
 }
