@@ -43,7 +43,7 @@ int main() {
     // ↓
     // Hash(20)
     // ↓
-    // Box 5
+    // it's there in Box 5 actuallly hash fxn ko formula pata hai . pata nahi rehta already.
     // ↓
     // Check Box 5
     // ↓
@@ -53,14 +53,18 @@ int main() {
 
 *****************    // think of it like : 
     // Tree:
-    // "Let's search."
+    // "Let's search." by the binary search tree left right method
 
     // Hash Table:
-    // "I already know approximately where it is."
+    // "I already know approximately where it is." or more accurately->  Let's calculate where to look.
 
 
 
 
     // what abouyt the fancy name bucket ??? forget it !!! just replace it with what i am comfortable it wit.
     // like slot storage box . anything i am comfortable with it.
+    // how does hash fxn finds it out ????
+    //  suppose the rule is Value % 10
+    // and uset.insert(37);
+    // then 37%10 is 7 therefore go to bucket 7
 }
