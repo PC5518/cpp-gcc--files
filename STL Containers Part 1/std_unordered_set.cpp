@@ -6,15 +6,15 @@ int main() {
     // because it does not use a tree.
     // instead it uses a hash table.
     std::unordered_set<int> uset;
-// internally this happens (just random boxes)
-// [0]
-// [1]
-// [2]
-// [3]
-// [4]
-// [5]
-// [6]
-// [7]
+    // internally this happens (just random boxes)
+    // [0]
+    // [1]
+    // [2]
+    // [3]
+    // [4]
+    // [5]
+    // [6]
+    // [7]
     uset.insert(10);
     // now the computer asks where should this 10 go????
     // the hash fxn answers : in [3]
@@ -35,6 +35,32 @@ int main() {
     // [3] -> 10
 
     // [5] -> 20   
-    std::cout<< uset.contains(10);
+    std::cout<< uset.contains(20);
+    // tree does go right and left.......
+    // Hash table says:
 
+    // 20
+    // ↓
+    // Hash(20)
+    // ↓
+    // Box 5
+    // ↓
+    // Check Box 5
+    // ↓
+    // Found
+
+    // Direct jump.
+
+*****************    // think of it like : 
+    // Tree:
+    // "Let's search."
+
+    // Hash Table:
+    // "I already know approximately where it is."
+
+
+
+
+    // what abouyt the fancy name bucket ??? forget it !!! just replace it with what i am comfortable it wit.
+    // like slot storage box . anything i am comfortable with it.
 }
