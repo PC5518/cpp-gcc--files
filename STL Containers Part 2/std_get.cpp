@@ -5,3 +5,5 @@ int main() {
     // now there's one more way to get it out:
     std::cout << std::get<0>(student)<<std::endl; // it works as a index
 }
+// 0 means the first element 
+// 1 means the second element 
