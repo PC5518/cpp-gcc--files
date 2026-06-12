@@ -9,7 +9,7 @@ int main() {
     std::cout <<deva <<std::endl;
     // now the problem is that what we maded reference is not an real object. it's just an another name for the existing variable or the object.
     int x =234;
-    int real_object_reference =  std::ref(x);
+    auto real_object_reference =  std::ref(x);
     std::cout << real_object_reference<<std::endl;
     real_object_reference++;
     std::cout <<x <<std::endl;
