@@ -14,5 +14,5 @@ int main() {
     real_object_reference++;
     std::cout <<x <<std::endl;
     std::cout <<real_object_reference <<std::endl;
-
+    // note: yahan ref ka type hai std::reference_wrapper<int>;
 }
