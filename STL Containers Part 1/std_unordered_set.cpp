@@ -51,7 +51,10 @@ int main() {
 
     // Direct jump.
 
-*****************    // think of it like : 
+    for (int i: uset) {
+        std::cout <<i <<std::endl;
+    }
+// *****************    // think of it like : 
     // Tree:
     // "Let's search." by the binary search tree left right method
 
