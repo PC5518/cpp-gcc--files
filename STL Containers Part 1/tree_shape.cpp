@@ -113,7 +113,8 @@ int main() {
 // Nobody sat down and "designed" this tree.
 
 // The shape emerged automatically from:
-
+// ######################################################################################
+// this is the ultimate rule of tree formation: 
 // Insert value
 // ↓
 // Compare
@@ -170,7 +171,7 @@ int main() {
 
 // A tree is not manually arranged.
 
-// Each new value asks:
+// Each new value asks: -> this is the important step.
 
 // Am I smaller?
 // → Go left
