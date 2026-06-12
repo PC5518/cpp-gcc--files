@@ -24,5 +24,9 @@ int main() {
     // auto it=  s.find(10);
     // std::cout << it<<std::endl;
     std::cout <<"" <<std::endl;
+    if (s.contains(10)) { // here s.contains(10) means 1 if true and 0 means false. so if true is the output compiler will go witht the if ellse positon.
+        std::cout<< "yes it exist "<<std::endl;
+    }
+    std::cout<<s.contains(343) << "this means true if spoken in python form. "<<std::endl;
 }
 
