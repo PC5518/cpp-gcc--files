@@ -1,0 +1,42 @@
+introduction to the concept of tree.
+first i saw this in set.
+rifht now just understand the picture:
+std::set
+        20
+       /  \
+     10    30
+    this is called binary search tree
+    why it was created ?????  
+    imagine std::vector<int> v=  {10,20,30,40,50};
+    now i want to find out 40;
+    sol1=> the one i used is to walk through loop until found it out.
+
+    Tree says:->> need 40????
+        30
+       /  \
+     20    50
+    /      /
+   10     40
+    start 30
+40 > 30
+
+↓
+
+Go right
+
+↓
+
+50
+
+40 < 50
+
+↓
+
+Go left
+
+↓
+
+40
+
+Found.
+so basically tree is left child plus right child.
