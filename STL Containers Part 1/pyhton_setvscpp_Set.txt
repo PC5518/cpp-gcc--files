@@ -1,0 +1,2 @@
+internally python is totally different from cpp's set. python uses hash table behind for set.
+cpp uses balanced tree. 
