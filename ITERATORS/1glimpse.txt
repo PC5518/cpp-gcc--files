@@ -1,0 +1,24 @@
+The Mental Picture: Think of a vector like a row of boxes. An iterator is simply a pointer finger that points to one box at a time.vec.begin() points your finger at the first box.vec.end() points to a ghost spot just past the last box (to know you are done).++it moves your finger one box to the right.*it lets you see or change inside the box.The Simplest Code ExampleCopy, paste, and run this code. It is the absolute starting point for iterators:cpp#include <iostream>
+#include <vector>
+
+int main() {
+    std::vector<int> numbers = {10, 20, 30};
+
+    // 1. Point to the very start
+    auto it = numbers.begin();
+
+    // 2. Read the value (Outputs 10)
+    std::cout << "First item: " << *it << "\n";
+
+    // 3. Move to the next item
+    ++it;
+
+    // 4. Read the new value (Outputs 20)
+    std::cout << "Second item: " << *it << "\n";
+
+    return 0;
+}
+Use code with caution.The Next Small Step: A Simple LoopOnce you understand moving manually, you let a loop do it until you hit the end:cpp// Start at begin, keep going until you hit the end, move forward each time
+for (auto it = numbers.begin(); it != numbers.end(); ++it) {
+    std::cout << *it << " "; // Print current item
+}
