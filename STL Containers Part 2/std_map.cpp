@@ -16,3 +16,6 @@ int main() {
     // internally each of the entry is in std::pair<const std::string, pair>
 }
 // here (aditya, 28) is a node which stores a pair. therefore each node stores a pair.
+// Balanced Tree
++
+// Each node stores a pair(key,value)
