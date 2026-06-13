@@ -9,5 +9,5 @@ int main() {
     pq.push(40);
     pq.push(50);
     std::cout << pq.top(); // output is 100 by default it uses the magnitude of the integer to prioritise. the more the magnitude the higher is the priority
-
+//  first priority ->100 50 40 20 10 like this 
 }
