@@ -13,4 +13,6 @@ int main() {
     for (const auto& i: data) {
         std::cout << i.first<< " : " << i.second<<std::endl;
     }
+    // internally each of the entry is in std::pair<const std::string, pair>
 }
+// here (aditya, 28) is a node which stores a pair. therefore each node stores a pair.
