@@ -4,3 +4,5 @@
 <img width="1250" height="906" alt="image" src="https://github.com/user-attachments/assets/b19061ea-6748-4e92-b24d-60ac7db5b51e" />
 # BASIC OPERATIONS AT INITIAL LEVEL:
 <img width="936" height="920" alt="image" src="https://github.com/user-attachments/assets/e2a3860b-9828-4374-a847-4e47403197e9" />
+# getting queue . but here FIFO: FIRST IN FIRST OUT. HERE'S HOW I AM RELATING WITH THE BILLING COUNTER ANALYSIS
+<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/49170127-3600-49b7-a7d6-24028af3ce6f" />
