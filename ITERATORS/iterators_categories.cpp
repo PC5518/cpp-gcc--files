@@ -1,7 +1,7 @@
 #include <iostream>
 // First principle: iterator = generelised pointer. but not exactly a pointer.
 // why only the categories need ???
-// in vector as a container we can do indexation but in linked list it;'s not possible because it is a binary search tree not a  
+// in vector (contiguos memory) as a container we can do indexation but in linked list it;'s not possible because it is linear chain of nodes not a contigous memory container.
 // that's wht it was important to build the categories
 // a linked list must walk node by node
 
