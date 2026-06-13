@@ -1,5 +1,6 @@
 #include <iostream>
 #include <unordered_set>
+// basically it's a set but with for getting fast result of finding we sacrificed it to be sorrted instead we created box method to use hash table and  find the value faster than the traditional binary tree/
 int main() {
     // now in set the ordered is always sorted but it's something different
     // nobody promises order. why????
