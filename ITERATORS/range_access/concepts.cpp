@@ -1,4 +1,5 @@
 #include <iostream>
+#include <list>
 #include <vector>
 int main() {
     std::vector<int> v={10,20,30};
@@ -19,6 +20,9 @@ int main() {
         std::cout<<*i <<std::endl;
     }
     std::cout << "***************************************************************************************************" <<std::endl;
-    
+    std::list<int> l{2,32,34,234,23,4};
+    for (int i: l) {
+        std::cout<< i<<std::endl;
+    }
 }
 
