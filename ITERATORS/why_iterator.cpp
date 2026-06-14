@@ -5,6 +5,7 @@ int main() {
     l.push_back(10);
     std::cout<< l.size()<<std::endl;
     // noww to go from 1 to 10 i will be required to go throuhg all if i want to achive it.
+    // overall it will be required to move node by node.
     // iterator provides the solution to direct jump.
     //  like it + 10; and done
 }
