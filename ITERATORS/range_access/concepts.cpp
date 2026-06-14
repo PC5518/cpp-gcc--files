@@ -24,5 +24,13 @@ int main() {
     for (int i: l) {
         std::cout<< i<<std::endl;
     }
+
+    std::cout << "***************************************************************************************************" <<std::endl;
+    std::vector<int> sample={2,2,32,24,43,23,4};
+    auto cit =sample.cbegin();
+    // now this will never alow to change the data via this iterator like *cit =23;
+    // same for .cend
+    
+
 }
 
