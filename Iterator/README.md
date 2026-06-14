@@ -1,2 +1,3 @@
 # **Understading the iterator type by their container difference in std.**
-<img width="460" height="687" alt="image" src="https://github.com/user-attachments/assets/df46ed80-8b25-4c1e-8a85-040707bdccfc" />
+<img width="410" height="519" alt="image" src="https://github.com/user-attachments/assets/0dbdb57d-26b9-4bba-ba0a-22f106ca93e5" />
+
