@@ -10,4 +10,4 @@ int main() {
     std::cout<<*it <<std::endl;
     // this is the most basic form of iterator and it's called as input iterator.
     // Input iterators are designed for single-pass, read-only sequential traversal. They only support the increment operator (++) to move forward. They do not support the decrement operator (--), meaning you cannot reverse direction or re-read previous elements once you have moved past them.
-}
+}   
