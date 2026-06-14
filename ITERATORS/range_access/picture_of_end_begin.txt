@@ -3,3 +3,4 @@
 ^                   ^
 |                   |
 begin()           end()
+In C++, .begin() and .end() are member functions of Standard Template Library (STL) containers (like std::vector, std::list, or std::set) that return iterators used to traverse and manipulate data.
