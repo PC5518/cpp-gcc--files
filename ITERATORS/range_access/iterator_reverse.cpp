@@ -9,5 +9,5 @@ int main() {
         cout<<*i << " ";
     }
     // 2322 24 2 23 2  now the iterator will see like this.
-
+// and when combine both const and reverse we get crbegin and crend
 }
