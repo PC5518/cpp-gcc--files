@@ -4,6 +4,7 @@ using std::endl;
 class youtube {
 public:
     int users;
+    int likes;
     youtube(int s ) {
         users= s;
     }
@@ -22,5 +23,8 @@ int main() {
     pycraft.display();
     cout<<pycraft.users <<std::endl;
     ++pycraft.users;
-    cout<<pycraft.users <<std::endl;
+    cout<<pycraft.users <<std::endl; // fxn baar baar yahi check karega ki object ke under me yaa iska koi member fxns hai yaa nahi with the name users.
+    ++pycraft.likes;
+
+    cout<<pycraft.likes <<std::endl;
 }
