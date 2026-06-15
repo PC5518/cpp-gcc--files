@@ -1,1 +1,214 @@
 starting with STL algorithm
+Question:
+
+Agar mere paas:
+
+std::vector<int>
+
+hai.
+
+Aur phir:
+
+std::list<int>
+
+hai.
+
+Aur phir:
+
+std::deque<int>
+
+hai.
+
+Toh kya mujhe har container ke liye alag algorithm likhna chahiye?
+
+Human way:
+
+find_in_vector(...)
+find_in_list(...)
+find_in_deque(...)
+
+😵
+
+Same logic baar baar.
+
+STL way:
+
+std::find(...)
+
+Ek hi algorithm.
+
+Sab par kaam karega.
+
+Why?
+
+Because STL says:
+
+Don't care about the container.
+
+Care about the interface.
+
+Vector gives:
+
+begin()
+end()
+
+List gives:
+
+begin()
+end()
+
+Deque gives:
+
+begin()
+end()
+
+So algorithm says:
+
+Mujhe vector nahi chahiye.
+Mujhe list nahi chahiye.
+Mujhe deque nahi chahiye.
+
+Mujhe sirf begin() aur end() do.
+
+
+This is generic design.
+
+Example
+
+Instead of:
+
+find_in_vector(...)
+
+STL writes:
+
+std::find(first, last, value);
+
+Then:
+
+std::find(v.begin(), v.end(), 10);
+
+works.
+
+And:
+
+std::find(lst.begin(), lst.end(), 10);
+
+also works.
+
+And:
+
+std::find(d.begin(), d.end(), 10);
+
+also works.
+
+The Big Idea
+
+Algorithms are written against:
+
+Capabilities
+
+not
+
+Specific containers
+
+This is exactly why STL became famous.
+
+Advice on Member Functions
+
+This part is much simpler.
+
+Suppose:
+
+std::set<int> s;
+
+Need to find:
+
+10
+
+Option 1:
+
+std::find(s.begin(), s.end(), 10);
+
+Works.
+
+Option 2:
+
+s.find(10);
+
+Also works.
+
+Which one should we use?
+
+s.find(10);
+
+✅
+
+Why?
+
+Because the container knows its own internals.
+
+std::set is a tree.
+
+Its member function can use the tree efficiently.
+
+Generic algorithm:
+
+std::find(...)
+
+may simply walk through elements.
+
+So STL rule:
+
+If a container provides a specialized member function,
+prefer it.
+
+Examples:
+
+s.find(x);
+
+better than
+
+std::find(s.begin(), s.end(), x);
+
+for sets.
+
+unordered_set.contains(x);
+
+better than
+
+std::find(...)
+
+for unordered containers.
+
+Notebook Summary
+Generic Design
+
+Algorithms should work with capabilities
+(begin/end/iterators)
+rather than specific containers.
+
+Write once.
+Work everywhere.
+Advice on Member Functions
+
+If a container provides a specialized member function
+(e.g. set::find, unordered_set::contains),
+prefer it over a generic STL algorithm.
+
+ The entire lecture can be compressed into:
+
+Generic algorithms = maximum flexibility.
+
+Container member functions = maximum efficiency.
+
+That's the core message. Once this clicks, the rest of STL Algorithms starts making a lot more sense because you'll stop thinking:
+
+algorithm for vector
+algorithm for list
+algorithm for deque
+
+and start thinking:
+
+algorithm for iterators
+
+which is the STL mindset. 
