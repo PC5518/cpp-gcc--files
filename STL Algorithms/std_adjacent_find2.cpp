@@ -11,7 +11,7 @@ int main() {
     };
     // it's used to find whether any of the pair in the given format of container has an identical pair .
     auto it= std::adjacent_find(v.begin(), v.end(), [](int a, int b) {
-        return std::abs(a-b) ;
+        return std::abs(a-b)<=2 ;
     });
     std::cout<<*it <<std::endl;
     // agar kuch nahi mila then return kar dega v.end();
