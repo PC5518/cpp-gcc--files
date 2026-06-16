@@ -6,5 +6,6 @@ int main() {
     auto it =  std::find_if(v.begin(), v.end(),[](int x) {
         return x%2==0;
     }  );
-    std::cout << *it << " where the index is " <<  <<std::endl;
+    std::cout << *it << " whose index is " << (it- v.begin()) <<std::endl;
+    
 }
