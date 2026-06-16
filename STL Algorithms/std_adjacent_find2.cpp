@@ -13,6 +13,18 @@ int main() {
     auto it= std::adjacent_find(v.begin(), v.end(), [](int a, int b) {
         return std::abs(a-b)<=2 ;
     });
+    //  now this is a custom conditioned version where adjacent_find pair matching se hat kar kam karta hai.
+    // think like: 
+    // Main exactly aise hi sochta:
+    // find()
+    // =
+    // Find one matching element
+    // adjacent_find()
+    // =
+    // Find one matching adjacent pair
+
+
+    
     std::cout<<*it <<std::endl;
     // agar kuch nahi mila then return kar dega v.end();
     // CONS : EK BAAR AAGYA PAIR THEN AAGE KA NAHI BATAYEGA
