@@ -12,7 +12,7 @@ int main() {
 
         return b%2==0;
     });  // this it is a pointer based pair.
-    // BE CAREFULL: 
+    // BE CAREFULL:
     //  actually ye return karega iterator ka pair.  <iterator, iterator>
     std::cout << *it.first<< " "<< *it.second;
     // output: 234 232
