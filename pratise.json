@@ -1,0 +1,26 @@
+{
+    "total_files": 3115,
+    "scan_errors": 0,
+    "duration_seconds": 2.254320097,
+    "categories": {
+        "Code/Source": 283,
+        "Documents": 43,
+        "Images": 0,
+        "Videos": 0,
+        "Audio": 0,
+        "Archives": 0,
+        "Executables": 218,
+        "System/Config": 0,
+        "Other/Unknown": 2571
+    },
+    "extensions": {
+        "cpp": 277,
+        "exe": 218,
+        "hpp": 1,
+        "java": 1,
+        "json": 1,
+        "md": 9,
+        "py": 3,
+        "txt": 34
+    }
+}
