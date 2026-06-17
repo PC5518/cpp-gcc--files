@@ -11,6 +11,7 @@ int main() {
     for (int i:vector2) {
         std::cout << i<<" " ;
     };
+    // will learn some new approach to it in future!
 
     // now agar ek vector se dusre vector me copy krna hai toh std::copy ka usse karte hai 
 }
