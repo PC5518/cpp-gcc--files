@@ -7,4 +7,5 @@ int main() {
     // std::cout -> return value is integer type
     int counting  = std::count(v.begin(), v.end(),5);
     std::cout <<counting <<std::endl;
+    
 }
