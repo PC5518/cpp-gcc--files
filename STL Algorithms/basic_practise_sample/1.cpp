@@ -14,4 +14,3 @@ int main() {
 // Golden rule:
 
 // Lambda ke andar sirf ek kaam hota hai — ek expression evaluate karo aur true/false do. Compiler ko bas wahi chahiye! ✅
-
