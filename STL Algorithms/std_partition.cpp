@@ -10,5 +10,5 @@ int main() {
     for (int i: v) {
         std::cout<<i << " ";
     }
-    // console output: 2 2 4 2 2 34 2 3 3 
+    // console output: 2 2 4 2 2 34 2 3 3   even |  odd 
 }
