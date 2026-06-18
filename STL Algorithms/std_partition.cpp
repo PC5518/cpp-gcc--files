@@ -11,4 +11,6 @@ int main() {
         std::cout<<i << " ";
     }
     // console output: 2 2 4 2 2 34 2 3 3   even |  odd 
+    //  now the thing to be noticed is that the order is not preserved.
+    // for the order to be preserved we use stable partition
 }
