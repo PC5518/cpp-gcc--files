@@ -254,7 +254,7 @@
 | L11-09 | std::copy | ⬜ |
 | L11-10 | std::copy_if and std::copy_n | ⬜ |
 | L11-11 | std::fill and fill_n | ⬜ |
-| L11-12 | std::generate and generate_n | ⬜ |
+| L11-12 | std::generate and generate_n | (this does elements of the container access. therefore not like python's lambda) |
 | L11-13 | std::reverse and reverse_copy | ⬜ |
 | L11-14 | Erase-remove idiom: remove, remove_if, remove_copy_if | ⬜ |
 | L11-15 | Easier removal: std::erase (non-member) and erase_if | ⬜ |
@@ -263,7 +263,7 @@
 | L11-18 | cppman round 2 | ⬜ |
 | L11-19 | shuffle algorithm | ⬜ |
 | L11-20 | unique and unique_copy | ⬜ |
-| L11-21 | transform algorithm | ⬜ |
+| L11-21 | transform algorithm | same like std::generate and has the internal elements access because of [](int x) { fxn here to return and push it to the original container in the game} |
 | L11-22 | std::partition, std::is_partitioned | ⬜ |
 | L11-23 | std::partition_point, std::partition_copy | ⬜ |
 | L11-24 | stable_sort, sort | ⬜ |
