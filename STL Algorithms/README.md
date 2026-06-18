@@ -6,3 +6,7 @@
 <img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/be713b89-f190-47ee-b21e-ef673407b73a" />
 ## one of the most important stl fxn to understand and be catious is std::remove(v.begin(), v.end(), integer to be removed). it shouldd be used with the combined use of the pre defined member fxn that is v.erase(giving the iterator collected as the input to v.end()iterator )
 <img width="1919" height="1031" alt="image" src="https://github.com/user-attachments/assets/82182224-c9d0-4c34-ad8d-37379c8a658a" />
+# Working rule of std::rotate() stl algorithm
+<img width="1915" height="994" alt="image" src="https://github.com/user-attachments/assets/afd62a58-31b2-49ff-ac16-57d18b95e590" />
+<img width="1243" height="585" alt="image" src="https://github.com/user-attachments/assets/f6f55c97-1826-4462-bcc7-44256608d2cb" />
+
