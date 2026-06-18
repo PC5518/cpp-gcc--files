@@ -15,3 +15,7 @@
 #  IMPORTANT REALISATION:  toh ye ek sequence me dekhta hai UNIQUENESS. toh ye set wala uniqueness all over the container nahi dikhata hai .   INPUT: 2,2,2,4,2,3,2   OUTPUT:  2 4 2 3 2 
 <img width="1413" height="1018" alt="image" src="https://github.com/user-attachments/assets/222d81cc-ac9e-45d1-a669-c942162fadb1" />
 
+#  how std::generate and std::generate and std::transform differe from each other and why std:::transform is much useful and the best overall for me.
+<img width="1017" height="568" alt="image" src="https://github.com/user-attachments/assets/413cfed6-33a9-4422-bfe1-ee1f1f3abe47" />
+<img width="775" height="655" alt="image" src="https://github.com/user-attachments/assets/f1b650bb-770b-4756-ac66-6785ff77e79b" />
+<img width="837" height="670" alt="image" src="https://github.com/user-attachments/assets/3553cc10-af1a-43d5-bf3b-728ab5d2be74" />
