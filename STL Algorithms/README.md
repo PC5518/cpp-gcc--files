@@ -5,3 +5,4 @@
 # FXN signature for std::generate .  point to observe: lambda's structure for different stl algorithms can be different
 <img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/be713b89-f190-47ee-b21e-ef673407b73a" />
 ## one of the most important stl fxn to understand and be catious is std::remove(v.begin(), v.end(), integer to be removed). it shouldd be used with the combined use of the pre defined member fxn that is v.erase(giving the iterator collected as the input to v.end()iterator )
+<img width="1919" height="1031" alt="image" src="https://github.com/user-attachments/assets/82182224-c9d0-4c34-ad8d-37379c8a658a" />
