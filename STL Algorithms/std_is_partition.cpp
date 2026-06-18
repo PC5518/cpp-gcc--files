@@ -1,6 +1,7 @@
 #include <iostream>
 #include <vector>
 #include <algorithm>
+// naam se hi pata chalta hai
 // now ye bohot simple hai !
 // ye partition nahi karta hai ; ye sirf puchta hai ki pehle se hi partioned hai ?
 int main() {
