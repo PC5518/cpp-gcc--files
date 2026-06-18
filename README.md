@@ -264,7 +264,7 @@
 | L11-19 | shuffle algorithm | ⬜ |
 | L11-20 | unique and unique_copy | ⬜ |
 | L11-21 | transform algorithm | the C++ version of Python's map:  same like std::generate and has the internal elements access because of [](int x) { fxn here to return and push it to the original container in the game} |
-| L11-22 | std::partition, std::is_partitioned | ⬜ |
+| L11-22 | std::partition, std::is_partitioned, std::stable_partition | ⬜ |
 | L11-23 | std::partition_point, std::partition_copy | ⬜ |
 | L11-24 | stable_sort, sort | ⬜ |
 | L11-25 | is_sorted, is_sorted_until | ⬜ |
