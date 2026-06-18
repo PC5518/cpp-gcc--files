@@ -13,4 +13,5 @@
 
 #  std::unique(v.begin(), v.end()) returns an iterator just same as std::remove and using it and inserting it to v.erase(it, v.end()) and remove the rubbish elements:
 #  IMPORTANT REALISATION:  toh ye ek sequence me dekhta hai UNIQUENESS. toh ye set wala uniqueness all over the container nahi dikhata hai .   INPUT: 2,2,2,4,2,3,2   OUTPUT:  2 4 2 3 2 
+<img width="1413" height="1018" alt="image" src="https://github.com/user-attachments/assets/222d81cc-ac9e-45d1-a669-c942162fadb1" />
 
