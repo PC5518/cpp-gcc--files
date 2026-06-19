@@ -9,6 +9,7 @@ int main() {
     // ek toh method hai ki sort karo then via iterator or index tisre element tak jao 
     // but why to go so long. we have this algorithmm to solve the problem:
     std::nth_element(v.begin(), v.begin()+2, v.end());  // now the mid one is the nth element
+    //  now this is also used heavily for finding median in cp
     auto it= v.begin();
     for (int i=0; i<2;i++) {
         ++it;
