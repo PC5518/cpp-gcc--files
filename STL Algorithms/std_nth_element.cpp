@@ -3,6 +3,7 @@
 #include <vector>
 #include <algorithm>
 #include <string>
+// overall glimpse: nth element finder without sorting
 int main() {
     std::vector<int>  v{1,23,3,2,4,3453,434,3234,53,32};
     // now let's say i want the third smallest element here.  
