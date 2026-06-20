@@ -1,5 +1,4 @@
 #include <iostream>
-// now this algorithm is very much powerful for CP!
 #include <vector>
 #include <algorithm>
 #include <string>
