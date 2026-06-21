@@ -270,7 +270,7 @@
 | L11-25 | is_sorted, is_sorted_until | ⬜ |
 | L11-26 | nth_element and partial_sort (median filter) | ⬜ |
 | L11-27 | std::inplace_merge, std::merge | ⬜ |
-| L11-28 | lower_bound, upper_bound, binary_search | ⬜ |
+| L11-28 | lower_bound, upper_bound, binary_search | all are alogirthms to find of binary search only |
 | L11-29 | includes (finding subsequences) | ⬜ |
 | L11-30 | set_union, set_intersection | ⬜ |
 | L11-31 | set_difference, set_symmetric_difference | ⬜ |
