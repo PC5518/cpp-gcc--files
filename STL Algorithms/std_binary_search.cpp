@@ -8,7 +8,7 @@
 
 // All three use binary search internally.
 
-// Requirement:
+// Requirement:  it should be a sorted list already.
 int main() {
     // it returns an boolean value.
     std::vector<int>  deepak{55,2,3,4,3,3,44};
