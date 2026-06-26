@@ -5,10 +5,10 @@
 // std::lower_bound()
 // std::upper_bound()
 // std::binary_search()
-
+// it'sm work is simple:  return an bool value telling whether the value exist or not.
 // All three use binary search internally.
 
-// Requirement:  it should be a sorted list already.
+// Requirement:  it should be a sorted list already. very important!
 int main() {
     // it returns an boolean value.
     std::vector<int>  deepak{55,2,3,4,3,3,44};
