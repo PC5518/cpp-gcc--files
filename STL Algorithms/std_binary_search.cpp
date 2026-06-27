@@ -11,8 +11,8 @@
 // Requirement:  it should be a sorted list already. very important!
 int main() {
     // it returns an boolean value.
-    std::vector<int>  deepak{55,2,3,4,3,3,44};
+    std::vector<int>  deepak{2,45,577,7886};
     std::sort(deepak.begin(), deepak.end());
-    bool found= std::binary_search(deepak.begin(), deepak.end(), 55);
+    bool found= std::binary_search(deepak.begin(), deepak.end(), 577);
     std::cout<< found;
 }
