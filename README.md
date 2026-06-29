@@ -271,7 +271,7 @@
 | L11-26 | nth_element and partial_sort (median filter) | ⬜ |
 | L11-27 | std::inplace_merge, std::merge | ⬜ |
 | L11-28 | lower_bound, upper_bound, binary_search | all are alogirthms to find of binary search only |
-| L11-29 | includes (finding subsequences) | ⬜ |
+| L11-29 | includes (finding subsequences) | ye kuch nahi hai. simmply maths hai. that is ek set ya container dusre container ka hissa ya subset hai. lekin ek shart:  set sorted hona chahiye |
 | L11-30 | set_union, set_intersection | ⬜ |
 | L11-31 | set_difference, set_symmetric_difference | ⬜ |
 | L11-32 | make_heap, pop_heap, sort_heap | ⬜ |
