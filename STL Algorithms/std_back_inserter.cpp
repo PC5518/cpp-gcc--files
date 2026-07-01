@@ -18,3 +18,9 @@ int main() {
 // vec.push_back(9);
 // vec.push_back(12);
 // this is the backend proccess 
+// Ab it normal iterator nahi hai.
+
+// Ye ek special iterator hai jiska kaam hai:
+
+// "Jab bhi koi *it = value kare,
+// main vec.push_back(value) kar dunga."
