@@ -18,4 +18,4 @@ int main() {
 
 
 //  now when i force the condition to be like a>b then it go with the return a that is with the else code.
-therefor ethe compiler jumps directly to the else block.
+// therefor ethe compiler jumps directly to the else block.
