@@ -1,6 +1,7 @@
 #include <iostream>
 #include <vector>
 #include <algorithm>
+#include <cmath>
 int main() {
     std::vector<int> v{1,24,533,45};
     // now min max kya tha ki only two values ko compare karta tha 
@@ -13,5 +14,5 @@ int main() {
     // extremely used !!
     // finding the index:
     std::cout<< "the index of the largest element is"<<(it2-v.begin()) <<std::endl; // now this wil return the index.!
-
+    std::cout<<abs(-865) <<std::endl;
 }
