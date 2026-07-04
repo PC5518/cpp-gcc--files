@@ -11,5 +11,7 @@ int main() {
     auto it2=std::max_element(v.begin(), v.end());
     std::cout<<(*it2) <<std::endl;   
     // extremely used !!
+    // finding the index:
+    std::cout<< "the index of the largest element is"<<(it2-v.begin()) <<std::endl; // now this wil return the index.!
 
 }
