@@ -8,4 +8,5 @@ int main() {
     int result =std::midpoint(first, last);
     std::cout<< result;
     // now this calculates the middpoiny and then take the absoulte value of the result.
+    // it also avoids the overflow issue. like the need to write longlong and etc
 }
