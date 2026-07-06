@@ -286,8 +286,8 @@
 
 | # | Topic | Done |
 |---|-------|------|
-| L12-01 | std::midpoint (Interview Question!) | #include <numeric> |
-| L12-02 | std::lerp | #include <cmath>|
+| L12-01 | std::midpoint (Interview Question!) | #include numeric |
+| L12-02 | std::lerp | #include cmath|
 | L12-03 | std::iota | ⬜ |
 | L12-04 | adjacent_difference | ⬜ |
 | L12-05 | partial_sum | ⬜ |
