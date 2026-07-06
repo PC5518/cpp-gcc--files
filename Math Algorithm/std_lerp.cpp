@@ -1,7 +1,7 @@
 #include <iostream>
 #include <vector>
 #include <algorithm>
-
+#include <cmath>
 // std::lerp means linear interpolation
 // matlab ek point se dusre jagah kitna percent pohonch gye.
 // Game development, graphics, animation, AI, physics... har jagah milta hai.
@@ -11,7 +11,7 @@ int main() {
     std::cout << result;
     // format:
     // fxn signature:  std::lerp(start, end, t)
-    
+
     // Ek interesting baat jo beginners miss kar dete hain
 
     // Bahut log sochte hain t sirf 0 se 1 ke beech hona chahiye.
