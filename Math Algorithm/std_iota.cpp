@@ -2,6 +2,7 @@
 #include <vector>
 #include <numeric>
 #include <algorithm>
+// basically iota takes an starting value and builds a sequence in a container.
 int main() {
     // now we fill valuees in the traditonal form like this;
     std::vector<int>  v(4);
