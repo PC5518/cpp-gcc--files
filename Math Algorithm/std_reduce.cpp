@@ -91,4 +91,6 @@ int main() {
     // ✅ Multiplication
 
 
-    
+// in terms of execution we know thast std::reduce is faster than std::accumulate but when it comes to ram occupy which wins in terms of occupuing less memory at the time of execution ?
+// When it comes to RAM, both algorithms are highly memory-efficient and tie for a win. Both std::accumulate and std::reduce do not scale memory usage with the size 
+// of your dataset. They both use an O(1) (constant) amount of extra memory, usually requiring only a single variable (an accumulator) to store the result.
