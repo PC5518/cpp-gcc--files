@@ -10,8 +10,13 @@ int main() {
     std::vector<int> result(v.size());
     auto summation=  std::accumulate(v.begin(), v.end(),0);   // this zero points towars the innital value 
     std::cout<<  summation ;
+    std::cout<< " " <<std::endl;
     // can also see it by  partial sum 
-    std::partial_sum(v.begin(), v.end(), result.begin(), 0);
-    std::cout<< *(result.end()) <<std::endl; // same result but different approach 
+    std::partial_sum(v.begin(), v.end(), result.begin());
+    for (int i:result ) {
+        std::cout<<i<<" ";
+    }
+    std::cout<< " "<<std::endl;
+    std::cout<< *(result.end()-1) <<std::endl; // same result but different approach 
 
 }
