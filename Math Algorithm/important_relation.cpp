@@ -13,7 +13,7 @@ int main() {
     }
     std::cout<< " "<<std::endl;
     std::partial_sum(result.begin(),  result.end(), original_vector.begin());
-    std::cout<< " here we are back at eh original vector v from where we started:  ";
+    std::cout<< " y  ";
     for (int i: original_vector) {
         std::cout<< i<<" ";
     }
