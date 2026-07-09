@@ -291,7 +291,7 @@
 | L12-03 | std::iota | #include numeric |
 | L12-04 | adjacent_difference |  #include numeric |
 | L12-05 | partial_sum |  #include numeric |
-| L12-06 | inner_product (map reduce) | ⬜ |
+| L12-06 | inner_product (map reduce) |  #include numeric |
 | L12-07 | std::accumulate (fold) | ⬜ |
 | L12-08 | reduce (parallel fold) | ⬜ |
 | L12-09 | transform_reduce | ⬜ |
