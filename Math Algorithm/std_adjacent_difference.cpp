@@ -14,4 +14,5 @@ int main()  {
         std::cout <<i <<" ";
     }
     // 1 1 1 0 1
+    // now let's see that why std::adjacentdifference and std::partial sum is just opposit of each other
 }
