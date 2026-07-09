@@ -7,6 +7,11 @@
 #include <numeric>
 int main() {
     std::vector<int> v{3,43,3,43};
+    std::vector<int> result(v.size());
     auto summation=  std::accumulate(v.begin(), v.end(),0);   // this zero points towars the innital value 
     std::cout<<  summation ;
+    // can also see it by  partial sum 
+    std::partial_sum(v.begin(), v.end(), result.begin(), 0);
+    std::cout<< *(result.end()) <<std::endl; // same result but different approach 
+
 }
