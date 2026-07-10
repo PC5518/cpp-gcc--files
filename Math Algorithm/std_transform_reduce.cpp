@@ -12,7 +12,8 @@ int main() {
     std::cout<<result <<std::endl;
 }
 // std::plus<>(): reality :Ye sirf ek function object (functor) hai jo + operator ko represent karta hai.
-// this is the fxn signature:
+// now attention: ye do stl algorithm jod rha hai naa ki operators like.
+// this is the fxn signature: Ye batata hai ki transform ke baad values ko reduce kaise karna hai.
 
 // std::transform_reduce(
 //     A.begin(),
