@@ -7,7 +7,7 @@ int main() {
 
     std::vector<int>v{2,42,453};
     auto result= std::transform_reduce(v.begin(), v.end(),0,std::plus<>() ,[](int a) {
-        return a*a;
+        return a*a;  // this zero signifies the inital values.
     });
     std::cout<<result <<std::endl;
 }
