@@ -11,6 +11,7 @@ int main() {
     });
     std::cout<<result <<std::endl;
 }
+// std::plus<>(): reality :Ye sirf ek function object (functor) hai jo + operator ko represent karta hai.
 // this is the fxn signature:
 
 // std::transform_reduce(
