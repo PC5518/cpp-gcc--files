@@ -28,6 +28,7 @@ int main() {
     for (int i:v) {
         std::cout<<i << " ";
     };
+    // this will print like 1, 2, 3, 4 like this ..... 
     // iski property hai ki ye ek baar se aage badhega 
     
 }
