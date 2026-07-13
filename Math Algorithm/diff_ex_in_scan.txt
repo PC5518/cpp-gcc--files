@@ -1,0 +1,56 @@
+main difference:  "inclusive scan me by default pehla value hi index 0 se shuru hoga" and in exclusive ham last me choose karenge in fxn signature.
+Inclusive Scan
+
+Input
+
+Index:  0   1   2   3
+Value:  2   5   9   15
+
+Output
+
+Index:  0   1   2   3
+Value:  2   7   16   31
+
+Notice:
+
+Output[0] = Input[0]
+
+Yaani
+
+2
+
+Automatically.
+
+Exclusive Scan
+
+Yahan STL poochta hai:
+
+"Output[0] me kya daalna hai?"
+
+Tum decide karte ho.
+
+Example
+
+std::exclusive_scan(
+    v.begin(),
+    v.end(),
+    ans.begin(),
+    0
+);
+
+Output
+
+0 2 7 16
+
+Agar likho
+
+std::exclusive_scan(
+    v.begin(),
+    v.end(),
+    ans.begin(),
+    100
+);
+
+Toh
+
+100 102 107 116
