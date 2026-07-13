@@ -7,7 +7,8 @@
 // Game development, graphics, animation, AI, physics... har jagah milta hai.
 int main() {
     auto result= std::lerp(100.0,200.0,0.7); // it means that 0.7 part of between 100 to 200 pahunch kaha pahucha hai. is case me answer hoga 170.
-    // computation logic:  200-100 =100  now (0.7*100)+100; i.e 170
+    // computation logic:  200-100 =100  now (0.7*100)+100; i.e 170 
+    // note: 170 is the output here. 
     std::cout << result;
     // format:
     // fxn signature:  std::lerp(start, end, t)
