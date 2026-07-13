@@ -29,6 +29,7 @@ int main() {
         std::cout<<i << " ";
     };
     // this will print like 1, 2, 3, 4 like this ..... 
+    // basically it acts like a direct  sequencial provider. a normal arithmetic progression  with d= 1
     // iski property hai ki ye ek baar se aage badhega 
     
 }
