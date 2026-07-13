@@ -9,3 +9,4 @@ int main() {
         std::cout<<i <<" ";
     }
 }
+// main difference:  "inclusive scan me by default pehla value hi index 0 se shuru hoga" and in exclusive ham last me choose karenge in fxn signature.
