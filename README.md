@@ -294,8 +294,8 @@
 | L12-06 | inner_product (map reduce) |  #include numeric |
 | L12-07 | std::accumulate (fold) | #include numeric |
 | L12-08 | reduce (parallel fold) | #include numeric |
-| L12-09 | transform_reduce | ⬜ |
-| L12-10 | exclusive_scan, inclusive_scan | ⬜ |
+| L12-09 | transform_reduce | #include numeric |
+| L12-10 | exclusive_scan, inclusive_scan | #include numeric |
 
 ---
 
