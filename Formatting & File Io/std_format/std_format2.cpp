@@ -30,6 +30,8 @@ int main() {
 
     // NOW THIS {} is an insert argument. and this : means formating starts here
     std::cout<<s <<std::endl;
-    //  this >10 means right ke side le jao khiska ke placeholder ko.
+    //  this >10 means right ke side le jao khiska ke placeholder ko .
+
+    // other include < > ^ and other
 
 }
