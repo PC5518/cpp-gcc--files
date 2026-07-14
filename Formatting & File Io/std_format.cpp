@@ -47,8 +47,9 @@ int main() {
     // std::format_string<Args...> fmt,
     // Args&&... args);
     // iska pura funda simple hai that is pehle arrange properly and then return that value value as string that will be later printed on the console via console output cout
-    std::string data = std::format("Age= {}", age);  // this {} is really amazing !!! it's type or class independent
-    std::cout<< data;
+    std::string data = std::format("Age= {}", age);  // this {} placeholder is really amazing !!! it's type or class independent
+    std::cout<< data<< std::endl;
     // my own realisation:  toh ye placeholder {} is liye advanced hai because ye irrespective of data type yaa class absorb kar lega ??? right ? wahi C wala only %d for decimal andd so on  i.e messy 
-
+    std::string print_data=  std::format("pie: {}",  3.14);
+    std::cout << print_data<<std::endl;
 }
