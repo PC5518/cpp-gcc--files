@@ -52,4 +52,8 @@ int main() {
     // my own realisation:  toh ye placeholder {} is liye advanced hai because ye irrespective of data type yaa class absorb kar lega ??? right ? wahi C wala only %d for decimal andd so on  i.e messy 
     std::string print_data=  std::format("pie: {}",  3.14);
     std::cout << print_data<<std::endl;
+    // lekin agar bohot sare placeholder hai and target kar ke variable dena hai toh  ?
+    // answer: actiually yahi feature std::format ko powerful banata hai
+    std::string data2 = std::format("{} {} {}", age, name , marks);
+    std::cout<< data2 << std::endl;
 }
