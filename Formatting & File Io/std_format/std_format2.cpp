@@ -33,5 +33,14 @@ int main() {
     //  this >10 means right ke side le jao khiska ke placeholder ko .
 
     // other include < > ^ and other
+    
+    std::string test =  std::format("Age= {:^10}", age); // this is simply telling how to  print ! 
+    std::cout<< test <<std::endl;
+    // basically it will center the value of the specific path.
+    // <  ← pointing to the left
+
+    // >  → pointing to the right
+
+    // ^  ↑ standing in the middle like a tent
 
 }
