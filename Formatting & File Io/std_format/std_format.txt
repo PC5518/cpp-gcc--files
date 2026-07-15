@@ -1,0 +1,5 @@
+"Age: {:^10} years"
+this is conceptually transformed into:
+Age: [          ] years
+      ↑
+   A 10-character box
