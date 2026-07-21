@@ -54,6 +54,6 @@ int main() {
     std::cout << print_data<<std::endl;
     // lekin agar bohot sare placeholder hai and target kar ke variable dena hai toh  ?
     // answer: actiually yahi feature std::format ko powerful banata hai
-    std::string data2 = std::format("{} {} {}", age, name , marks);
+    std::string data2= std::format("{} {} {}", age, name , marks);
     std::cout<< data2 << std::endl;
 }
